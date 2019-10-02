@@ -1,0 +1,139 @@
+.container.active {
+  z-index: 2000;
+  transform: translateX(0%);
+  transition: 0.7s all ease-in-out;
+}
+
+.container {
+  z-index: 2000;
+  transition: 0.7s all ease-in-out;
+  transform: translateX(100%);
+  width: 55%;
+  position: fixed;
+  right: 0;
+  top: 20%;
+  margin: 0 auto;
+  background-color: #ebe9e9;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: -webkit-center;
+  padding: 20px;
+
+  .close-btn {
+    z-index: 200;
+    border: 1px solid black;
+    border-radius: 2px;
+    width: 29px;
+    top: 12px;
+    left: 20px;
+    transform: translate(3%, 3%);
+    position: absolute;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  h2 {
+    color: currentColor;
+    padding: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+  .row {
+    width: 100%;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text-field {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #submit-btn {
+    margin-bottom: 20px;
+    background-color: #ab9548;
+    transition: 0.5s all ease-out;
+    border: none;
+    float: left;
+
+    &:hover {
+      background: #ffffff;
+      color: #ab9548;
+      transition: background-color 0.8s ease-out;
+      cursor: pointer;
+      transition: 0.5s all ease-out;
+      border: 1px solid #ab9548;
+    }
+  }
+
+  #subject {
+    width: 100% !important;
+    max-height: 200px !important;
+    margin-bottom: 20px;
+    border: 1px solid #b1b1b1;
+    border-radius: 5px;
+  }
+
+  #names,
+  .name {
+    display: flex;
+    border-radius: 5px;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+
+  #contactType {
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    height: 45px;
+    background: rgb(252, 249, 249);
+    border: 1px solid #b1b1b1;
+    outline: none;
+  }
+
+  input {
+    text-align: center;
+    font-size: 18px;
+    outline: none;
+    width: 48%;
+    padding: 10px;
+    border: 1px solid #b1b1b1;
+    border-radius: 5px;
+  }
+
+  label {
+    padding: 20px;
+  }
+}
+
+#btn-side {
+  cursor: pointer;
+  padding: 50px 10px 50px 10px;
+  z-index: 200;
+  background: #ab9548;
+  position: fixed;
+  bottom: 40%;
+  right: 0px;
+  writing-mode: vertical-lr;
+  transition: all 0.3s ease-out;
+  text-transform: uppercase;
+
+  &:hover {
+    background: #ffffff;
+    color: #ab9548;
+    transition: 0.3s all ease-in-out;
+  }
+}
+.container input {
+  font-size: 15px;
+}

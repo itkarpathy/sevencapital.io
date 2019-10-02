@@ -1,0 +1,70 @@
+section {
+  &.sec-2 {
+    background: url('./images/background_sc02.jpg');
+    background-size: cover;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+
+    .wrapper {
+      display: flex;
+      width: 100%;
+      position: relative;
+
+      .bot {
+        text-decoration: none;
+        position: relative;
+        padding: 7px 10px 10px 21px;
+        margin: 60px 0px 50px 0px;
+        height: 40px !important;
+        background: #ab9548;
+        text-transform: uppercase;
+        z-index: 200;
+        font-size: 23px;
+        transition: 0.6s all ease-in-out;
+        text-align: center;
+
+        &:hover {
+          cursor: pointer;
+          background: rgba(0, 0, 0, 0.7);
+          border: 0.25px solid #ffffff;
+          transition: 0.6s all ease-in-out;
+        }
+      }
+
+      .join1 {
+        bottom: 0;
+      }
+
+      .title-2 {
+        text-align: left;
+        margin: 0% 5% 0% 4%;
+        padding: 100px 30px 60px 30px;
+        max-width: 670px;
+        min-height: 100vh;
+        color: #f0f0f0;
+        background: #000000bf;
+
+        h1 {
+          padding: 0px 0px 70px 0px;
+          font-size: 50px;
+          color: #ab9548;
+          text-transform: uppercase;
+        }
+
+        h2 {
+          padding-bottom: 40px;
+          font-weight: 600;
+          font-size: 30px;
+          line-height: 1.4;
+        }
+
+        p {
+          line-height: 1.8;
+          font-size: 18px;
+          font-weight: 300;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}
