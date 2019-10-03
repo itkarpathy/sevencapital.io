@@ -10,7 +10,7 @@ import { networkInterfaces } from 'os';
 
 /* The function that will run when the events are triggered. */
 
-const text = document.querySelector('.w-test');
+// const text = document.querySelector('.w-test');
 const nav = document.querySelector('.navbar');
 const contact = document.querySelector('#btn-side');
 const close = document.querySelector('.close-btn');
@@ -171,15 +171,16 @@ tl7.from('#p-12', 1250, { x: 0, opacity: 0 }, '=-1');
 tl7.from('#p-13', 4260, { x: 0, opacity: 0 }, '=-1');
 tl7.from('#p-14', 2700, { x: 0, opacity: 0 }, '=-1');
 tl7.from('#p-15', 480, { x: 0, opacity: 0 }, '=-1');
-tl8.from('fix-box', 2480, { x: 0, opacity: 0 }, '=-1');
+tl8.from('.fix-box', 2480, { x: 0, opacity: 0 }, '=-1');
+tl8.to('.fix-box', 2480, { x: -200, opacity: 1 }, '=-1');
 
 const scene8 = new ScrollMagic.Scene({
-  triggerElement: '.sec-5',
+  triggerElement: '.sec',
   triggerHook: 'onLeave',
   duration: '100%'
 })
 
-  .setPin('.sec-5')
+  .setPin('.fix-box')
   .setTween(tl8)
   .addTo(controller);
 

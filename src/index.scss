@@ -117,84 +117,6 @@ img {
   }
 }
 
-header {
-  position: relative;
-  background-size: cover;
-  z-index: 3;
-
-  .icon {
-    opacity: 0;
-    z-index: 30;
-    position: fixed;
-    top: 2%;
-    right: 3%;
-    transform: translate(-2%, -3%);
-    width: 35px;
-
-    &:hover {
-      cursor: pointer;
-    }
-
-    .line {
-      list-style-type: none;
-      width: 35px;
-      height: 2px;
-      margin-bottom: 5px;
-      background: #8c8888;
-      transition: 0.4s all ease-out;
-    }
-  }
-
-  .navbar {
-    z-index: 3;
-    align-items: center;
-    display: flex;
-    justify-content: space-evenly;
-
-    .menu-right {
-      -webkit-transition: 1s all ease-out;
-      transition: 1s all ease-out;
-      display: flex;
-      width: 100%;
-      justify-content: space-evenly;
-    }
-
-    a {
-      text-decoration: none;
-      font-weight: 400;
-      color: rgb(89, 89, 89);
-      transition: 0.2s all ease-out;
-
-      &:hover {
-        cursor: pointer;
-        color: #ab9548;
-        transition: 0.4s all ease-out;
-      }
-    }
-
-    &.sticky {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: #ab9548;
-      transition: 0.5s all ease-out;
-
-      a {
-        color: white;
-
-        &:hover {
-          color: white;
-          transition: 0.5s all ease-out;
-
-          span {
-            color: black;
-          }
-        }
-      }
-    }
-  }
-}
-
 section {
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -371,6 +293,10 @@ section {
     position: relative;
     padding-top: 90px;
     min-height: 350vh;
+    transition: all 0.4s linear;
+    &.is-active {
+      background-color: #222222;
+    }
 
     .fix-box {
       width: 100%;
