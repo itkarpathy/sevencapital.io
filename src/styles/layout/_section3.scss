@@ -40,26 +40,14 @@ section {
     background-attachment: fixed;
     position: relative;
 
-    .img-fx {
-      background-size: cover;
-      top: 8%;
-      width: 100%;
-      position: absolute;
-
-      &.second {
-        top: 57% !important;
-      }
-    }
-
     .box {
-      top: 12%;
+      top: 17%;
       position: absolute;
       z-index: 1;
       background-repeat: no-repeat;
       max-width: 670px;
       background: #000000bf;
-
-      padding-top: 125px;
+      padding-top: 90px;
 
       h3 {
         padding: 0px 0px 50px 0px;

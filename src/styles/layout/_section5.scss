@@ -42,6 +42,11 @@ section {
     }
 
     .title-5 {
+      top: 17%;
+      position: absolute;
+      z-index: 1;
+      background-repeat: no-repeat;
+      max-width: 670px;
       position: absolute;
       top: 0;
       right: 0;
@@ -51,16 +56,16 @@ section {
       text-align: left;
 
       h3 {
+        padding: 0px 0px 50px 0px;
         margin-left: 40px;
-        font-size: 30px;
+        font-size: 50px;
         color: #ab9548;
         text-transform: uppercase;
       }
 
       h4 {
-        padding-top: 100px;
         margin-left: 40px;
-        font-size: 40px;
+        font-size: 30px;
         color: #ab9548;
         text-transform: uppercase;
       }
