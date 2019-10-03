@@ -1,0 +1,58 @@
+section {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  &.sec12 {
+    background-image: url('./images/2_mini.jpg');
+
+    & .bg5 {
+      .img-fix {
+        opacity: 1;
+        width: 100%;
+
+        &.f1 {
+          padding-bottom: 50vh;
+        }
+
+        &.f2 {
+          background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        &.f3 {
+          margin-bottom: 0px !important;
+        }
+      }
+
+      h3 {
+        font-size: 20px;
+        text-align: left;
+
+        padding-left: 10px;
+        position: sticky;
+        top: 0;
+        left: 100%;
+        color: #dfdfdf;
+        width: 30%;
+        min-height: 100vh;
+        line-height: 2;
+        background: rgba(0, 0, 0, 0.85);
+        box-shadow: inset -14px 0px 117px 9px rgba(0, 0, 0, 0.85);
+        box-shadow: -19px -1px 42px 71px rgba(0, 0, 0, 0.85);
+
+        &.f0 {
+          width: 100px;
+        }
+      }
+    }
+
+    & .bg6 {
+      background-image: url('./images/7_mini.jpg');
+      background-size: cover;
+    }
+  }
+}

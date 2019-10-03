@@ -91,7 +91,7 @@ var tl8 = new TimelineMax();
 const controller = new ScrollMagic.Controller();
 
 tl.from('blockquote', 1, { x: -400, opacity: 0 });
-tl.from('.box-img', 1, { x: 0, opacity: 0 });
+tl.from('.box-img', 1, { x: 300, opacity: 0, scale: '1.2' });
 tl.from('span', 1, { width: 0 }, '=-.5');
 tl.from('#img-1', 1, { x: -250, opacity: 0 }, '=-1');
 tl.from('#img-2', 1, { x: 200, opacity: 0 }, '=-1');
@@ -171,16 +171,20 @@ tl7.from('#p-12', 1250, { x: 0, opacity: 0 }, '=-1');
 tl7.from('#p-13', 4260, { x: 0, opacity: 0 }, '=-1');
 tl7.from('#p-14', 2700, { x: 0, opacity: 0 }, '=-1');
 tl7.from('#p-15', 480, { x: 0, opacity: 0 }, '=-1');
-tl8.from('.fix-box', 2480, { x: 0, opacity: 0 }, '=-1');
-tl8.to('.fix-box', 2480, { x: -200, opacity: 1 }, '=-1');
+// tl8.from('.fix-box', 2480, { x: 0, opacity: 0 }, '=-1');
+tl8.from('#imgOne', 2480, { x: 0, opacity: 0 }, '=-1');
+tl8.from('.title-5', 2480, { x: -200, opacity: 0 }, '=-1');
+tl8.to('.title-5', 2480, { y: 200, opacity: 1 }, '=-1');
+tl8.from('#helloJoin', 3480, { y: 0, opacity: 0 }, '=-1');
+////////
 
 const scene8 = new ScrollMagic.Scene({
-  triggerElement: '.sec',
+  triggerElement: '.sec-5',
   triggerHook: 'onLeave',
   duration: '100%'
 })
 
-  .setPin('.fix-box')
+  .setPin('#imgTwo')
   .setTween(tl8)
   .addTo(controller);
 

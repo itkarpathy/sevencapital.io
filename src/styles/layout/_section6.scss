@@ -1,0 +1,133 @@
+section {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  &.sec-6 {
+    position: relative;
+    color: rgb(252, 252, 252);
+    text-shadow: #000100 0.3px 2px 4px;
+    background: url('./images/23_mini.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+
+    .box-right {
+      flex: 1;
+      font-size: 30px;
+
+      .para-6 {
+        position: absolute;
+
+        &:nth-child(1) {
+          top: 10%;
+          left: 40%;
+        }
+        &:nth-child(2) {
+          top: 30%;
+          left: 35%;
+        }
+        &:nth-child(3) {
+          top: 33%;
+          left: 75%;
+        }
+        &:nth-child(4) {
+          top: 15%;
+          left: 50%;
+        }
+        &:nth-child(5) {
+          top: 20%;
+          left: 64%;
+        }
+        &:nth-child(6) {
+          top: 5%;
+          left: 35%;
+        }
+        &:nth-child(7) {
+          top: 25%;
+          left: 40%;
+          background: rgba(0, 0, 0, 0.3);
+          transition: 0.9s all ease-in-out;
+        }
+        &:nth-child(8) {
+          top: 10%;
+          right: 20%;
+        }
+        &:nth-child(9) {
+          top: 15%;
+          left: 50%;
+        }
+        &:nth-child(10) {
+          top: 7%;
+          left: 55%;
+        }
+        &:nth-child(11) {
+          top: 35%;
+          left: 40%;
+          background: #ab9548;
+          transition: 0.9s all ease-in-out;
+        }
+        &:nth-child(12) {
+          width: 371px;
+          top: 17%;
+          transition: 0.9s all ease-in-out;
+        }
+        &:nth-child(13) {
+          top: 11%;
+          left: 39%;
+          transition: 0.9s all ease-in-out;
+        }
+        &:nth-child(14) {
+          top: 29%;
+          left: 54%;
+          transition: 0.9s all ease-in-out;
+        }
+        &:nth-child(15) {
+          top: 35%;
+          left: 40%;
+          transition: 0.9s all ease-in-out;
+        }
+      }
+    }
+
+    .box {
+      max-width: 670px;
+      font-weight: 400;
+      top: 0%;
+      left: 0%;
+      padding: 2em;
+      top: 0px;
+      left: 0%;
+
+      background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, rgba(25, 10, 10, 0.6)),
+        color-stop(1, #190000)
+      );
+      font-size: 19px;
+      line-height: 2;
+      opacity: 1;
+
+      p {
+        font-size: 20px;
+        line-height: 2.8;
+        text-align: left;
+      }
+
+      h1 {
+        font-size: 40px;
+        padding: 40px;
+        border-bottom: 1px solid whitesmoke;
+        font-weight: 600;
+      }
+    }
+  }
+}

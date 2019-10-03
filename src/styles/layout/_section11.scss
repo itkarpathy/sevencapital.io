@@ -1,0 +1,21 @@
+section {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  &.sec11 {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 100vh !important;
+    background-image: url('./images/17_mini.jpg');
+  }
+}
