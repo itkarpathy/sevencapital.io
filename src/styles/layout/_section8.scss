@@ -32,21 +32,16 @@ section {
       background: #000000bf;
       font-weight: 300;
 
-      // background-image: -webkit-gradient(
-      //   linear,
-      //   left top,
-      //   left bottom,
-      //   color-stop(0, rgba(25, 10, 10, 0.6)),
-      //   color-stop(1, #190000)
-      // );
-
-      h4 {
-        padding: 70px 0 0 37px;
+      h3 {
         color: #ab9845;
+        font-size: 40px;
+        padding: 70px 0 80px 37px;
       }
 
-      span {
-        font-size: 40px;
+      h4 {
+        padding: 0px 0 0 37px;
+        color: #ab9845;
+        font-size: 30px;
       }
 
       p {
