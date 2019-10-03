@@ -173,8 +173,8 @@ tl7.from('#p-14', 2700, { x: 0, opacity: 0 }, '=-1');
 tl7.from('#p-15', 480, { x: 0, opacity: 0 }, '=-1');
 // tl8.from('.fix-box', 2480, { x: 0, opacity: 0 }, '=-1');
 tl8.from('#imgOne', 2480, { x: 0, opacity: 0 }, '=-1');
-tl8.from('.title-5', 2480, { x: -200, opacity: 0 }, '=-1');
-tl8.to('.title-5', 2480, { y: 200, opacity: 1 }, '=-1');
+tl8.from('#imgTwo', 4480, { x: 200, opacity: 0 }, '=-1');
+tl8.from('#imgThree', 6480, { x: 0, opacity: 0 }, '=-1');
 
 ////////
 

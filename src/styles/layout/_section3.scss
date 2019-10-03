@@ -13,31 +13,31 @@ section {
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-height: 600vh;
+    min-height: 300vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
 
     .img-fx {
-      height: 150vh !important;
       background-size: cover;
-      top: 16%;
+      top: 8%;
       width: 100%;
       position: absolute;
 
       &.second {
-        top: 62% !important;
+        top: 57% !important;
       }
     }
 
     .box {
+      top: 12%;
       position: absolute;
       z-index: 1;
       background-repeat: no-repeat;
       max-width: 670px;
       background: #000000bf;
-      position: sticky;
+
       padding-top: 125px;
 
       .join2 {
@@ -52,14 +52,14 @@ section {
         margin-left: 40px;
         font-size: 50px;
         color: #ab9548;
-        text-transform: uppercase; 
+        text-transform: uppercase;
       }
 
       h4 {
         margin-left: 40px;
         font-size: 30px;
         color: #ab9548;
-        text-transform: uppercase; 
+        text-transform: uppercase;
       }
 
       span {
@@ -73,7 +73,6 @@ section {
         font-size: 18px;
         font-weight: 300;
         margin-bottom: 15px;
-
       }
     }
   }
