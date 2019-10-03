@@ -15,53 +15,40 @@ section {
     background-size: cover;
     position: relative;
     transition: all 0.8s linear;
-    min-height: 245vh;
-
-    button {
-      -webkit-appearance: button;
-      bottom: 0;
-      position: absolute;
-      background: gold;
-    }
+    min-height: 272vh;
 
     .fix-box {
-      width: 70%;
-      position: absolute;
       top: 0%;
       left: 6%;
 
       &:nth-child(1) {
-        top: 0%;
+        top: 20%;
+        left: 30%;
       }
     }
 
     .title-5 {
-      position: absolute;
-      top: 20%;
-      right: 0;
-
+      flex: 1;
       .left {
-        background-image: -webkit-gradient(
-          linear,
-          left top,
-          left bottom,
-          color-stop(0, rgba(25, 10, 10, 0.6)),
-          color-stop(1, #190000)
-        );
+        width: 674px;
+        padding: 40px;
+        background: #000000bf;
         text-align: left;
 
-        h2 {
-          padding: 40px;
+        h4 {
+          margin-left: 40px;
+          font-size: 30px;
           color: #ab9548;
-          width: 443px;
+          text-transform: uppercase;
         }
 
         p {
-          padding: 30px;
-          font-size: 20px;
-          line-height: 1.5;
-          max-width: 670px;
-          font-weight: 200;
+          text-align: left;
+          padding: 40px;
+          line-height: 1.8;
+          font-size: 18px;
+          font-weight: 300;
+          margin-bottom: 15px;
         }
       }
     }

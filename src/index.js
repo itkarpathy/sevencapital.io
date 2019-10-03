@@ -175,7 +175,7 @@ tl7.from('#p-15', 480, { x: 0, opacity: 0 }, '=-1');
 tl8.from('#imgOne', 2480, { x: 0, opacity: 0 }, '=-1');
 tl8.from('.title-5', 2480, { x: -200, opacity: 0 }, '=-1');
 tl8.to('.title-5', 2480, { y: 200, opacity: 1 }, '=-1');
-tl8.from('#helloJoin', 3480, { y: 0, opacity: 0 }, '=-1');
+
 ////////
 
 const scene8 = new ScrollMagic.Scene({
@@ -184,7 +184,7 @@ const scene8 = new ScrollMagic.Scene({
   duration: '100%'
 })
 
-  .setPin('#imgTwo')
+  .setPin('#imgOne')
   .setTween(tl8)
   .addTo(controller);
 
