@@ -59,26 +59,6 @@ function sticky() {
   }
 }
 
-/////////////////////********//////////////////// */
-
-// function change() {
-//   const top = document.body.scrollTop;
-//   const eTop = document.documentElement.scrollTop;
-//   const fix = document.querySelector('.fix-p');
-
-//   console.log('%c WORKS', 'background:green');
-
-//   if (eTop > 13500 && eTop < 16000) {
-//     fix.classList.add('test');
-//   } else if (eTop > 16001 && eTop < 18000) {
-//     fix.classList.add('test2');
-//   } else {
-//     fix.classList.remove('test', 'test2');
-//   }
-// }
-
-/////////////////////////////////////////////
-
 var tl = new TimelineMax({ onUpdate: updatePercentage });
 var tl2 = new TimelineMax();
 var tl3 = new TimelineMax();
@@ -87,6 +67,7 @@ var tl5 = new TimelineMax();
 var tl6 = new TimelineMax();
 var tl7 = new TimelineMax();
 var tl8 = new TimelineMax();
+var tl9 = new TimelineMax();
 
 const controller = new ScrollMagic.Controller();
 
@@ -175,8 +156,23 @@ tl7.from('#p-15', 480, { x: 0, opacity: 0 }, '=-1');
 tl8.from('#imgOne', 2480, { x: 0, opacity: 0 }, '=-1');
 tl8.from('#imgTwo', 4480, { y: 200, opacity: 0 }, '=-1');
 tl8.from('#imgThree', 6480, { x: 0, opacity: 0 }, '=-1');
+tl9.from('#boxy', 1, { x: 0, opacity: 0 }, '=-1');
 
 ////////
+const scene9 = new ScrollMagic.Scene({
+  triggerElement: '.sec-8',
+  triggerHook: 'onLeave',
+  duration: '100%',
+  offset: '200'
+})
+
+  .setPin('.sec-8')
+  .setTween(tl9)
+  .addTo(controller);
+
+// add basic indicators
+
+// passing options
 
 const scene8 = new ScrollMagic.Scene({
   triggerElement: '.sec-5',
@@ -184,7 +180,7 @@ const scene8 = new ScrollMagic.Scene({
   duration: '100%'
 })
 
-  .setPin('.fix-box')
+  .setPin('.sec-5')
   .setTween(tl8)
   .addTo(controller);
 
