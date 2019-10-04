@@ -18,21 +18,104 @@ section {
 
     .scroll-trigger {
       position: absolute;
-      top: 20%;
-      width: 200px;
+      top: 0%;
+      width: 50px;
+    }
 
-      &#box-right {
-        position: relative;
-      }
+    .scroll-trigger2 {
+      position: absolute;
+      top: 10%;
+      width: 50px;
+    }
+
+    .scroll-trigger3 {
+      position: absolute;
+      top: 20%;
+      width: 50px;
+    }
+
+    .scroll-trigger4 {
+      position: absolute;
+      top: 30%;
+      width: 50px;
+    }
+    .scroll-trigger5 {
+      position: absolute;
+      top: 40%;
+      width: 50px;
+    }
+    .scroll-trigger6 {
+      position: absolute;
+      top: 50%;
+      width: 50px;
+    }
+    .scroll-trigger7 {
+      position: absolute;
+      top: 60%;
+      width: 50px;
+    }
+    .scroll-trigger8 {
+      position: absolute;
+      top: 70%;
+      width: 50px;
     }
 
     .frame-box {
       position: fixed;
       top: 20%;
-      left: 60%;
-      width: 300px;
+      left: 45%;
+      width: 400px;
       height: 300px;
-      border: 20px solid orange;
+
+      #img111 {
+        position: absolute;
+        top: 30%;
+        left: 20%;
+      }
+
+      #img222 {
+        position: absolute;
+        top: 30%;
+        left: 20%;
+      }
+
+      #img333 {
+        position: absolute;
+        top: 30%;
+        left: 20%;
+      }
+
+      #img333 {
+        position: absolute;
+        top: 30%;
+        left: 20%;
+      }
+
+      #img444 {
+        position: absolute;
+        top: 30%;
+        left: 20%;
+      }
+      #img555 {
+        position: absolute;
+        top: 30%;
+        left: 20%;
+      }
+      #img666 {
+        position: absolute;
+        top: 30%;
+        left: 20%;
+      }
+      #img777 {
+        position: absolute;
+        top: 30%;
+        left: 20%;
+      }
+      #img888 {
+        position: absolute;
+        top: 30%;
+        left: 20%;
+      }
     }
 
     .box {

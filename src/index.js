@@ -68,8 +68,17 @@ var tl6 = new TimelineMax();
 var tl7 = new TimelineMax();
 var tl8 = new TimelineMax();
 var tl9 = new TimelineMax();
+var tl10 = new TimelineMax();
+var tl11 = new TimelineMax();
+var tl12 = new TimelineMax();
+var tl13 = new TimelineMax();
+var tl14 = new TimelineMax();
+var tl15 = new TimelineMax();
+var tl16 = new TimelineMax();
 
-const controller = new ScrollMagic.Controller();
+const controller = new ScrollMagic.Controller({ addIndicators: true });
+
+new ScrollMagic.Scene().addTo(controller);
 
 tl.from('blockquote', 1, { x: -400, opacity: 0 });
 tl.from('.box-img', 1, { x: 300, opacity: 0, scale: '1.2' });
@@ -156,23 +165,96 @@ tl7.from('#p-15', 480, { x: 0, opacity: 0 }, '=-1');
 tl8.from('#imgOne', 2480, { x: 0, opacity: 0 }, '=-1');
 tl8.from('#imgTwo', 4480, { y: 200, opacity: 0 }, '=-1');
 tl8.from('#imgThree', 6480, { x: 0, opacity: 0 }, '=-1');
-tl9.from('#boxy', 1, { x: 0, opacity: 0 }, '=-1');
+tl9.from('#img111', 300, { x: 0, opacity: 0 }, '=-1');
+tl10.from('#img222', 300, { x: 0, opacity: 0 }, '=-1');
+tl11.from('#img333', 300, { x: 0, opacity: 0 }, '=-1');
+tl12.from('#img444', 300, { x: 0, opacity: 0 }, '=-1');
+tl13.from('#img555', 300, { x: 0, opacity: 0 }, '=-1');
+tl14.from('#img666', 300, { x: 0, opacity: 0 }, '=-1');
+tl15.from('#img777', 300, { x: 0, opacity: 0 }, '=-1');
+tl16.from('#img888', 300, { x: 0, opacity: 0 }, '=-1');
 
 ////////
-const scene9 = new ScrollMagic.Scene({
-  triggerElement: '.sec-8',
+
+const scene16 = new ScrollMagic.Scene({
+  triggerElement: '.sec-8 .scroll-trigger8',
   triggerHook: 'onLeave',
-  duration: '100%',
-  offset: '200'
+  duration: '100'
 })
 
-  .setPin('.sec-8')
-  .setTween(tl9)
+  .setPin('.sec-8 .frame-box')
+  .setTween(tl16)
   .addTo(controller);
 
-// add basic indicators
+const scene15 = new ScrollMagic.Scene({
+  triggerElement: '.sec-8 .scroll-trigger7',
+  triggerHook: 'onLeave',
+  duration: '100'
+})
 
-// passing options
+  .setPin('.sec-8 .frame-box')
+  .setTween(tl15)
+  .addTo(controller);
+
+const scene14 = new ScrollMagic.Scene({
+  triggerElement: '.sec-8 .scroll-trigger6',
+  triggerHook: 'onLeave',
+  duration: '100'
+})
+
+  .setPin('.sec-8 .frame-box')
+  .setTween(tl14)
+  .addTo(controller);
+
+const scene13 = new ScrollMagic.Scene({
+  triggerElement: '.sec-8 .scroll-trigger5',
+  triggerHook: 'onLeave',
+  duration: '100'
+})
+
+  .setPin('.sec-8 .frame-box')
+  .setTween(tl13)
+  .addTo(controller);
+
+const scene12 = new ScrollMagic.Scene({
+  triggerElement: '.sec-8 .scroll-trigger4',
+  triggerHook: 'onLeave',
+  duration: '100'
+})
+
+  .setPin('.sec-8 .frame-box')
+  .setTween(tl12)
+  .addTo(controller);
+
+const scene11 = new ScrollMagic.Scene({
+  triggerElement: '.sec-8 .scroll-trigger3',
+  triggerHook: 'onLeave',
+  duration: '100'
+})
+
+  .setPin('.sec-8 .frame-box')
+  .setTween(tl11)
+  .addTo(controller);
+
+const scene10 = new ScrollMagic.Scene({
+  triggerElement: '.sec-8 .scroll-trigger2',
+  triggerHook: 'onLeave',
+  duration: '100'
+})
+
+  .setPin('.sec-8 .frame-box')
+  .setTween(tl10)
+  .addTo(controller);
+
+const scene9 = new ScrollMagic.Scene({
+  triggerElement: '.sec-8 .scroll-trigger',
+  triggerHook: 'onLeave',
+  duration: '100'
+})
+
+  .setPin('.sec-8 .frame-box')
+  .setTween(tl9)
+  .addTo(controller);
 
 const scene8 = new ScrollMagic.Scene({
   triggerElement: '.sec-5',
