@@ -10,7 +10,6 @@ section {
   &.sec-6 {
     position: relative;
     color: rgb(252, 252, 252);
-    text-shadow: #000100 0.3px 2px 4px;
     background: url('./images/23_mini.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -99,38 +98,36 @@ section {
     }
 
     .box {
-      max-width: 670px;
+      max-width: 675px;
       font-weight: 300;
       top: 0%;
       left: 0%;
-      padding: 40px;
+      padding: 10px;
       background: #000000bf;
       opacity: 1;
 
+      h3 {
+        padding: 90px 0px 0px 0px;
+        margin-left: 40px;
+        font-size: 40px;
+        color: #ab9548;
+        text-transform: uppercase;
+      }
+
+      h4 {
+        margin-left: 40px;
+        font-size: 30px;
+        color: #ab9548;
+        text-transform: uppercase;
+      }
+
       p {
         text-align: left;
+        padding: 10px 40px 40px 40px;
         line-height: 1.8;
         font-size: 18px;
         font-weight: 300;
         margin-bottom: 15px;
-      }
-
-      h4 {
-        padding: 40px 0 40px 0;
-        text-align: left;
-        font-size: 30px;
-        font-weight: 600;
-        color: #ab9548;
-        text-transform: uppercase;
-      }
-
-      h1 {
-        padding: 60px 0 50px 0px;
-        color: #ab9548;
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 40px;
-        font-weight: 600;
       }
     }
   }

@@ -9,7 +9,7 @@ section {
 
   &.sec-5 {
     width: 100%;
-    background: url('./images/18_mini.jpg');
+    background: url('./images/pa-35.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,26 +17,26 @@ section {
     transition: all 0.8s linear;
     min-height: 272vh;
 
-    .fix-box img {
+    .fix-box {
       display: flex;
       flex: 1;
-      // position: absolute;
-      // top: 10%;
+      position: absolute;
+      top: 10%;
       // left: -50%;
 
-      &:nth-child(1) {
-        position: absolute;
+      &#imgOne {
+        position: relative;
         top: 0%;
         left: 0%;
       }
-      &:nth-child(2) {
-        position: absolute;
+      &#imgTwo {
+        position: relative;
         top: 40%;
-        left: 0%;
+        left: -20%;
       }
       &:nth-child(3) {
         position: absolute;
-        top: 70%;
+        top: 30%;
         left: 0;
       }
     }
@@ -50,13 +50,13 @@ section {
       position: absolute;
       top: 0;
       right: 0;
-      width: 50%;
+      max-width: 675px;
       padding: 10px;
       background: #000000bf;
       text-align: left;
 
       h3 {
-        padding: 0px 0px 50px 0px;
+        padding: 90px 0px 50px 0px;
         margin-left: 40px;
         font-size: 50px;
         color: #ab9548;
@@ -72,7 +72,7 @@ section {
 
       p {
         text-align: left;
-        padding: 40px;
+        padding: 10px 40px 40px 40px;
         line-height: 1.8;
         font-size: 18px;
         font-weight: 300;
