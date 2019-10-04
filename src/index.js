@@ -90,8 +90,8 @@ var tl8 = new TimelineMax();
 
 const controller = new ScrollMagic.Controller();
 
-tl.from('blockquote', 1, { x: -400, opacity: 0 });
-tl.from('.box-img', 1, { x: 300, opacity: 0, scale: '1.2' });
+// tl.from('blockquote', 1, { x: -400, opacity: 0 });
+// tl.from('.box-img', 1, { x: 300, opacity: 0, scale: '1.2' });
 tl.from('span', 1, { width: 0 }, '=-.5');
 tl.from('#img-1', 1, { x: -250, opacity: 0 }, '=-1');
 tl.from('#img-2', 1, { x: 200, opacity: 0 }, '=-1');
@@ -173,7 +173,7 @@ tl7.from('#p-14', 2700, { x: 0, opacity: 0 }, '=-1');
 tl7.from('#p-15', 480, { x: 0, opacity: 0 }, '=-1');
 // tl8.from('.fix-box', 2480, { x: 0, opacity: 0 }, '=-1');
 tl8.from('#imgOne', 2480, { x: 0, opacity: 0 }, '=-1');
-tl8.from('#imgTwo', 4480, { x: 200, opacity: 0 }, '=-1');
+tl8.from('#imgTwo', 4480, { y: 200, opacity: 0 }, '=-1');
 tl8.from('#imgThree', 6480, { x: 0, opacity: 0 }, '=-1');
 
 ////////
@@ -184,7 +184,7 @@ const scene8 = new ScrollMagic.Scene({
   duration: '100%'
 })
 
-  .setPin('#imgOne')
+  .setPin('.fix-box')
   .setTween(tl8)
   .addTo(controller);
 
