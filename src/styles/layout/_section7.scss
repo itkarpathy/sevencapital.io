@@ -15,17 +15,19 @@ section {
     background-size: cover;
 
     blockquote {
-      color: #dfdfdf;
+      color: #fff;
       position: absolute;
-      font-size: 4em;
-      width: 30%;
-      top: 14%;
+      font-size: 4.5em;
+      font-weight: 600;
+      width: 37%;
+      top: 23%;
       left: 32%;
-      box-shadow: 16px 11px 6px black;
+      text-align: center;
+      
 
       span {
-        background: red;
-        height: 5px;
+
+        color:#ab9548;
       }
     }
 
@@ -38,7 +40,7 @@ section {
       left: 5% !important;
       top: 5% !important;
       margin-top: 15%;
-      line-height: 2.8;
+      line-height: 1.8;
     }
 
     img {
