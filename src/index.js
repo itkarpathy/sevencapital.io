@@ -71,8 +71,8 @@ var tl9 = new TimelineMax();
 
 const controller = new ScrollMagic.Controller();
 
-// tl.from('blockquote', 1, { x: -400, opacity: 0 });
-// tl.from('.box-img', 1, { x: 300, opacity: 0, scale: '1.2' });
+tl.from('blockquote', 1, { x: -400, opacity: 0 });
+tl.from('.box-img', 1, { x: 300, opacity: 0, scale: '1.2' });
 tl.from('span', 1, { width: 0 }, '=-.5');
 tl.from('#img-1', 1, { x: -250, opacity: 0 }, '=-1');
 tl.from('#img-2', 1, { x: 200, opacity: 0 }, '=-1');
