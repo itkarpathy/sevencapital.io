@@ -15,36 +15,24 @@ section {
     background-size: cover;
     position: relative;
     transition: all 0.8s linear;
-    min-height: 272vh;
+    min-height: 300vh;
 
-    .fix-box {
-      display: flex;
-      flex: 1;
+    .scroll-trigger-5-1 {
       position: absolute;
-      top: 10%;
-      // left: -50%;
+      top: 15%;
+      width: 200px;
+    }
 
-      &#imgOne {
-        position: relative;
-        top: 0%;
-        left: 0%;
-      }
-      &#imgTwo {
-        position: relative;
-        top: 40%;
-        left: -40%;
-      }
-      &:nth-child(3) {
-        position: absolute;
-        top: 30%;
-        left: 0;
-      }
+    .scroll-trigger-5-2 {
+      position: absolute;
+      top: 30%;
+      width: 200px;
     }
 
     .title-5 {
       top: 17%;
       position: absolute;
-      z-index: 1;
+      z-index: 2;
       background-repeat: no-repeat;
       max-width: 670px;
       position: absolute;
@@ -77,6 +65,41 @@ section {
         font-size: 18px;
         font-weight: 300;
         margin-bottom: 15px;
+      }
+
+      .s-mini {
+        object-fit: cover;
+        position: absolute;
+        width: 50%;
+        height: 200px;
+        z-index: -1;
+      }
+
+      #imgOne {
+        top: 9%;
+        left: -55%;
+      }
+
+      #imgTwo {
+        top: 23%;
+        left: -55%;
+      }
+
+      #imgThree {
+        top: 38%;
+        left: -55%;
+      }
+      #imgFour {
+        top: 53%;
+        left: -55%;
+      }
+      #imgFive {
+        top: 65%;
+        left: -55%;
+      }
+      #imgSix {
+        top: 80%;
+        left: -55%;
       }
     }
   }
