@@ -75,6 +75,7 @@ var tl13 = new TimelineMax();
 var tl14 = new TimelineMax();
 var tl15 = new TimelineMax();
 var tl16 = new TimelineMax();
+var tl17 = new TimelineMax();
 
 const controller = new ScrollMagic.Controller({ addIndicators: true });
 
@@ -162,9 +163,15 @@ tl7.from('#p-13', 4260, { x: 0, opacity: 0 }, '=-1');
 tl7.from('#p-14', 2700, { x: 0, opacity: 0 }, '=-1');
 tl7.from('#p-15', 480, { x: 0, opacity: 0 }, '=-1');
 // tl8.from('.fix-box', 2480, { x: 0, opacity: 0 }, '=-1');
-tl8.from('#imgOne', 2480, { x: 0, opacity: 0 }, '=-1');
-tl8.from('#imgTwo', 4480, { y: 200, opacity: 0 }, '=-1');
-tl8.from('#imgThree', 6480, { x: 0, opacity: 0 }, '=-1');
+tl8.from('#imgOne', 3480, { x: -200, opacity: 0 }, '=-1');
+tl8.from('#imgTwo', 4480, { x: -200, opacity: 0 }, '=-1');
+tl17.from('#imgThree', 4580, { x: -200, opacity: 0 }, '=-1');
+tl17.from('#imgFour', 4680, { x: -200, opacity: 0 }, '=-1');
+tl17.from('#imgFive', 4780, { x: -200, opacity: 0 }, '=-1');
+tl17.from('#imgSix', 4880, { x: -200, opacity: 0 }, '=-1');
+
+////////////////////////////-----/////////////////
+
 tl9.from('#img111', 300, { x: 0, opacity: 0 }, '=-1');
 tl10.from('#img222', 300, { x: 0, opacity: 0 }, '=-1');
 tl11.from('#img333', 300, { x: 0, opacity: 0 }, '=-1');
@@ -175,6 +182,16 @@ tl15.from('#img777', 300, { x: 0, opacity: 0 }, '=-1');
 tl16.from('#img888', 300, { x: 0, opacity: 0 }, '=-1');
 
 ////////
+
+const scene17 = new ScrollMagic.Scene({
+  triggerElement: '.sec-5 .scroll-trigger-5-1',
+  triggerHook: 'onLeave',
+  duration: '100%'
+})
+
+  .setPin('.scroll-trigger-5-2')
+  .setTween(tl17)
+  .addTo(controller);
 
 const scene16 = new ScrollMagic.Scene({
   triggerElement: '.sec-8 .scroll-trigger8',
