@@ -16,6 +16,12 @@ section {
     flex-direction: column;
     position: relative;
     min-height: 100vh !important;
-    background-image: url('./images/5095.png');
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: -webkit-fill-available;
+    }
   }
 }
