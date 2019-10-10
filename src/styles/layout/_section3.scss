@@ -40,7 +40,6 @@ section {
     position: relative;
 
     #bg-change-1 {
-      position: absolute;
       top: 0;
       left: 0;
     }
@@ -49,12 +48,14 @@ section {
       position: absolute;
       top: 15%;
       width: 200px;
+      border-bottom: 3px solid red;
     }
 
     .scroll-trigger-3-2 {
       position: absolute;
       top: 30%;
       width: 200px;
+      border-bottom: 3px solid rgb(140, 205, 10);
     }
 
     .bot {
