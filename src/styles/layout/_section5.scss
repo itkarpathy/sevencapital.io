@@ -6,16 +6,15 @@ section {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  width: 100%;
 
   &.sec-5 {
-    width: 100%;
     background: url('./images/pa-35.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
     transition: all 0.8s linear;
-    min-height: 200vh;
+    min-height: 240vh;
 
     .scroll-trigger-5-1 {
       position: absolute;
@@ -29,78 +28,95 @@ section {
       width: 200px;
     }
 
-    .title-5 {
-      top: 17%;
+    .center-wrapper {
+      display: flex;
+      justify-content: space-evenly;
+      top: 10%;
       position: absolute;
-      z-index: 2;
-      background-repeat: no-repeat;
-      max-width: 670px;
-      position: absolute;
-      top: 0;
-      right: 9%;
-      max-width: 675px;
-      padding: 10px;
-      background: #000000bf;
-      text-align: left;
+      width: 1200px;
+      margin: 0 auto;
 
-      h3 {
-        padding: 90px 0px 50px 0px;
-        margin-left: 40px;
-        font-size: 45px;
-        color: #ab9548;
-        text-transform: uppercase;
+      .box-left-img {
+        padding-right: 40px;
+        top: 0;
+        left: 0%;
+        flex: 1;
+
+        .s-mini {
+          position: relative;
+          object-fit: cover;
+          width: 550px;
+          height: 250px;
+          z-index: 2;
+        }
+
+        #imgOne {
+          top: 10%;
+          left: 0%;
+        }
+
+        #imgTwo {
+          top: 12%;
+          left: 0%;
+        }
+
+        #imgThree {
+          top: 17%;
+          left: 0%;
+        }
+        #imgFour {
+          top: 21%;
+          left: 0%;
+        }
+        #imgFive {
+          top: 24%;
+          left: 0%;
+        }
+        #imgSix {
+          top: 27%;
+          left: 0%;
+          height: 353px;
+        }
       }
 
-      h4 {
-        margin-left: 40px;
-        font-size: 30px;
-        color: #ab9548;
-        text-transform: uppercase;
-      }
+      .title-5 {
+        flex: 2;
+        top: 17%;
+        z-index: 2;
+        background-repeat: no-repeat;
+        // max-width: 670px;
 
-      p {
+        // position: absolute;
+        top: 0;
+        right: 9%;
+        // max-width: 675px;
+        padding: 10px;
+        background: #000000bf;
         text-align: left;
-        padding: 10px 40px 40px 40px;
-        line-height: 1.8;
-        font-size: 18px;
-        font-weight: 300;
-        margin-bottom: 15px;
-      }
 
-      .s-mini {
-        object-fit: cover;
-        position: absolute;
-        width: 550px;
-        height: 250px;
-        z-index: -1;
-      }
+        h3 {
+          padding: 90px 0px 50px 0px;
+          margin-left: 40px;
+          font-size: 45px;
+          color: #ab9548;
+          text-transform: uppercase;
+        }
 
-      #imgOne {
-        top: 10%;
-        left: -90%;
-      }
+        h4 {
+          margin-left: 40px;
+          font-size: 30px;
+          color: #ab9548;
+          text-transform: uppercase;
+        }
 
-      #imgTwo {
-        top: 23%;
-        left: -90%;
-      }
-
-      #imgThree {
-        top: 37%;
-        left: -90%;
-      }
-      #imgFour {
-        top: 50%;
-        left: -90%;
-      }
-      #imgFive {
-        top: 62%;
-        left: -90%;
-      }
-      #imgSix {
-        top: 76%;
-        left: -90%;
-        height: 353px;
+        p {
+          text-align: left;
+          padding: 10px 40px 40px 40px;
+          line-height: 1.8;
+          font-size: 18px;
+          font-weight: 300;
+          margin-bottom: 15px;
+        }
       }
     }
   }
