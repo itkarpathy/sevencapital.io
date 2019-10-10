@@ -42,20 +42,21 @@ section {
     #bg-c1 {
       position: absolute;
       top: 0;
+      left: 0;
       height: 100%;
     }
 
     .scroll-trigger-3-1 {
       position: absolute;
       top: 15%;
-      left: 20%;
+      left: 0%;
       width: 200px;
       border-bottom: 4px solid red;
     }
 
     .scroll-trigger-3-2 {
       position: absolute;
-      left: 20%;
+      left: 0%;
       width: 200px;
       border-bottom: 4px solid rgb(140, 205, 10);
     }
