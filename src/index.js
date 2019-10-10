@@ -76,7 +76,6 @@ var tl14 = new TimelineMax();
 var tl15 = new TimelineMax();
 var tl16 = new TimelineMax();
 var tl17 = new TimelineMax();
-var tl18 = new TimelineMax();
 
 const controller = new ScrollMagic.Controller({ addIndicators: true });
 
@@ -170,7 +169,6 @@ tl17.from('#imgThree', 4580, { x: -200, opacity: 0 }, '=-1');
 tl17.from('#imgFour', 4680, { x: -200, opacity: 0 }, '=-1');
 tl17.from('#imgFive', 4780, { x: -200, opacity: 0 }, '=-1');
 tl17.from('#imgSix', 4880, { x: -200, opacity: 0 }, '=-1');
-tl18.from('.bg-sec-3', 4880, { x: 0, opacity: 0 }, '=-1');
 
 ////////////////////////////-----/////////////////
 
@@ -184,15 +182,6 @@ tl15.from('#img777', 300, { x: 0, opacity: 0 }, '=-1');
 tl16.from('#img888', 300, { x: 0, opacity: 0 }, '=-1');
 
 ////////
-const scene17 = new ScrollMagic.Scene({
-  triggerElement: '.sec-3 .scroll-trigger-3-1',
-  triggerHook: 'onLeave',
-  duration: '100%'
-})
-
-  .setPin('.scroll-trigger-3-2')
-  .setTween(tl18)
-  .addTo(controller);
 
 const scene17 = new ScrollMagic.Scene({
   triggerElement: '.sec-5 .scroll-trigger-5-1',
