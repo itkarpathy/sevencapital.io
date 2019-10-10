@@ -43,19 +43,20 @@ section {
       position: absolute;
       top: 0;
       left: 0;
-      height: 300vh;
-      width: 1500px;
+      height: 100%;
+      width: 100%;
+      background-size: cover;
     }
 
     .scroll-trigger-3-1 {
       position: absolute;
-      top: 15%;
+      top: 10%;
       left: 0%;
       width: 200px;
     }
 
     .scroll-trigger-3-2 {
-      top: 30%;
+      top: 25%;
       position: absolute;
       left: 0%;
       width: 200px;
@@ -83,7 +84,7 @@ section {
     }
 
     .box {
-      top: 7%;
+      top: 5%;
       position: absolute;
       z-index: 1;
       background-repeat: no-repeat;
