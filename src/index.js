@@ -76,6 +76,7 @@ var tl14 = new TimelineMax();
 var tl15 = new TimelineMax();
 var tl16 = new TimelineMax();
 var tl17 = new TimelineMax();
+var tl18 = new TimelineMax();
 
 const controller = new ScrollMagic.Controller({ addIndicators: true });
 
@@ -136,9 +137,9 @@ tl4.from('#pa-13', 7810, { x: 150, opacity: 0 }, '=-1');
 tl4.from('#pa-14', 9240, { x: 300, opacity: 0 }, '=-1');
 tl4.from('#pa-15', 3990, { x: 0, opacity: 0 }, '=-1');
 
-tl5.from('.bg3', 1, { backgroundColor: 'red' }, '=-1');
-tl5.from('.bg3 h3:last-child', 0.3, { transform: 'translateX(0%)' }, '=-1');
-tl5.from('.bg4', 1, { backgroundColor: 'green' }, '=-1');
+// tl5.from('.bg3', 1, { backgroundColor: 'red' }, '=-1');
+// tl5.from('.bg3 h3:last-child', 0.3, { transform: 'translateX(0%)' }, '=-1');
+// tl5.from('.bg4', 1, { backgroundColor: 'green' }, '=-1');
 tl6.from('.bg5', 1, { backgroundColor: 'grey' }, '=-1');
 tl7.from('#p-1', 1490, { x: 0, opacity: 0 }, '=-1');
 tl7.from('#p-2', 3310, { x: 0, opacity: 0 }, '=-1');
@@ -169,6 +170,7 @@ tl17.from('#imgThree', 4580, { x: -200, opacity: 0 }, '=-1');
 tl17.from('#imgFour', 4680, { x: -200, opacity: 0 }, '=-1');
 tl17.from('#imgFive', 4780, { x: -200, opacity: 0 }, '=-1');
 tl17.from('#imgSix', 4880, { x: -200, opacity: 0 }, '=-1');
+tl17.from('.sec-3', 4880, { x: 0, opacity: 0 }, '=-1');
 
 ////////////////////////////-----/////////////////
 
@@ -182,6 +184,15 @@ tl15.from('#img777', 300, { x: 0, opacity: 0 }, '=-1');
 tl16.from('#img888', 300, { x: 0, opacity: 0 }, '=-1');
 
 ////////
+const scene17 = new ScrollMagic.Scene({
+  triggerElement: '.sec-3 .scroll-trigger-3-1',
+  triggerHook: 'onLeave',
+  duration: '100%'
+})
+
+  .setPin('.scroll-trigger-3-2')
+  .setTween(tl18)
+  .addTo(controller);
 
 const scene17 = new ScrollMagic.Scene({
   triggerElement: '.sec-5 .scroll-trigger-5-1',
