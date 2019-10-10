@@ -37,7 +37,7 @@ section {
       max-width: 670px;
       position: absolute;
       top: 0;
-      right: 4%;
+      right: 9%;
       max-width: 675px;
       padding: 10px;
       background: #000000bf;
@@ -70,7 +70,7 @@ section {
       .s-mini {
         object-fit: cover;
         position: absolute;
-        width: 80%;
+        width: 550px;
         height: 250px;
         z-index: -1;
       }
@@ -86,19 +86,19 @@ section {
       }
 
       #imgThree {
-        top: 39%;
+        top: 37%;
         left: -90%;
       }
       #imgFour {
-        top: 51%;
+        top: 50%;
         left: -90%;
       }
       #imgFive {
-        top: 66%;
+        top: 62%;
         left: -90%;
       }
       #imgSix {
-        top: 81%;
+        top: 76%;
         left: -90%;
       }
     }
