@@ -170,7 +170,7 @@ tl17.from('#imgThree', 4580, { x: -200, opacity: 0 }, '=-1');
 tl17.from('#imgFour', 4680, { x: -200, opacity: 0 }, '=-1');
 tl17.from('#imgFive', 4780, { x: -200, opacity: 0 }, '=-1');
 tl17.from('#imgSix', 4880, { x: -200, opacity: 0 }, '=-1');
-tl18.from('#bg-c1', 4880, { x: 0, opacity: 0 }, '=-1');
+tl18.from('#bg-c1', 4580, { x: 0, opacity: 0 }, '=-1');
 
 ////////////////////////////-----/////////////////
 
