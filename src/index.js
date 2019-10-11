@@ -96,7 +96,11 @@ tl4.from('#pa-2', 3310, { x: 0, opacity: 0 }, '=-1');
 tl4.from('#pa-3', 2240, { x: 0, opacity: 0 }, '=-1');
 tl4.from('#pa-4', 1250, { x: 0, opacity: 0 }, '=-1');
 tl4.from('#pa-5', 4260, { x: 0, opacity: 0 }, '=-1');
-
+tl4.from('#pa-6', 3490, { x: 0, opacity: 0 }, '=-1');
+tl4.from('#pa-7', 3310, { x: 0, opacity: 0 }, '=-1');
+tl4.from('#pa-8', 2240, { x: 0, opacity: 0 }, '=-1');
+tl4.from('#pa-9', 1250, { x: 0, opacity: 0 }, '=-1');
+tl4.from('#pa-10', 4260, { x: 0, opacity: 0 }, '=-1');
 /////
 
 // tl5.from('.bg3', 1, { backgroundColor: 'red' }, '=-1');
@@ -307,7 +311,7 @@ const scene3 = new ScrollMagic.Scene({
   .addTo(controller);
 
 const scene4 = new ScrollMagic.Scene({
-  triggerElement: '.sec-6',
+  triggerElement: '.sec-6 .trigger-6-1',
   triggerHook: 'onLeave',
   duration: '100%'
 })
