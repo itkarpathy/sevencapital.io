@@ -31,8 +31,6 @@ section {
     .center-wrapper {
       display: flex;
       justify-content: space-evenly;
-      top: 0%;
-      position: absolute;
 
       .box-left-img {
         padding-right: 40px;
@@ -82,12 +80,8 @@ section {
         top: 17%;
         z-index: 2;
         background-repeat: no-repeat;
-        // max-width: 670px;
-
-        // position: absolute;
-        top: 0;
+        max-width: 670px;
         right: 9%;
-        // max-width: 675px;
         padding: 10px;
         background: #000000bf;
         text-align: left;
