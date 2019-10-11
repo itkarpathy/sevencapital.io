@@ -10,7 +10,8 @@ section {
   &.sec-6 {
     position: relative;
     color: rgb(252, 252, 252);
-    background: url('./images/23_mini.jpg');
+    // background: url('./images/23_mini.jpg');
+    background: #ab9548;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -20,41 +21,46 @@ section {
     .box-right {
       flex: 1;
       font-size: 30px;
+      background-repeat: no-repeat;
 
       .para-6 {
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 400px;
         position: absolute;
 
         &:nth-child(1) {
           top: 10%;
           left: 40%;
+          background: url('/src/images/birmingham-1.png');
         }
         &:nth-child(2) {
           top: 30%;
           left: 35%;
+          background: url('/src/images/birmingham-2.png');
         }
         &:nth-child(3) {
           top: 33%;
           left: 75%;
+          background: url('/src/images/birmingham-3.png');
         }
         &:nth-child(4) {
           top: 15%;
           left: 50%;
+          background: url('/src/images/birmingham-4.png');
         }
         &:nth-child(5) {
           top: 20%;
           left: 64%;
+          background: url('/src/images/birmingham-5.png');
         }
         &:nth-child(6) {
           top: 9%;
           left: 63%;
-          background: rgba(0, 0, 0, 0.3);
-          transition: 0.9s all ease-in-out;
         }
         &:nth-child(7) {
           top: 40%;
           left: 45%;
-          background: rgba(0, 0, 0, 0.3);
-          transition: 0.9s all ease-in-out;
         }
         &:nth-child(8) {
           top: 10%;
