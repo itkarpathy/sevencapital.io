@@ -15,44 +15,61 @@ section {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    min-height: 100vh;
+    min-height: 250vh;
     display: flex;
 
+    .trigger-6-1 {
+      position: absolute;
+      top: 0%;
+      left: 0;
+      width: 200px;
+      border-bottom: 3px solid green;
+    }
+
     .box-right {
+      top: 10%;
+      right: 2%;
+      position: fixed;
+      border: 3px solid red;
+      height: 700px;
+      width: 800px;
+      -webkit-box-flex: 1;
       flex: 1;
       font-size: 30px;
       background-repeat: no-repeat;
 
-      .para-6 {
+      &.para-6 {
         background-repeat: no-repeat;
         width: 100%;
-        height: 400px;
+        height: 100%;
+        top: 0;
+        right: 0;
         position: absolute;
 
-        &:nth-child(1) {
-          top: 10%;
-          left: 40%;
-          background: url('/src/images/birmingham-1.png');
+        &#pa-1 {
+          top: 0%;
+          left: 0%;
+          background-image: url('/src/images/birmingham-1.png');
         }
         &:nth-child(2) {
           top: 30%;
           left: 35%;
-          background: url('/src/images/birmingham-2.png');
+          background-image: url('/src/images/birmingham-2.png');
         }
         &:nth-child(3) {
           top: 33%;
-          left: 75%;
-          background: url('/src/images/birmingham-3.png');
+          left: 0;
+          background-image: url('/src/images/birmingham-3.png');
         }
         &:nth-child(4) {
           top: 15%;
           left: 50%;
-          background: url('/src/images/birmingham-4.png');
+          background-image: url('/src/images/birmingham-4.png');
         }
         &:nth-child(5) {
           top: 20%;
           left: 64%;
-          background: url('/src/images/birmingham-5.png');
+          background-image: url('/src/images/birmingham-5.png');
         }
         &:nth-child(6) {
           top: 9%;
@@ -112,6 +129,8 @@ section {
       background: #000000bf;
       opacity: 1;
       margin: 0% 4% 0% 4%;
+      flex: 1;
+      position: absolute;
 
       h3 {
         padding: 90px 0px 0px 0px;

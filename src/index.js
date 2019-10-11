@@ -91,51 +91,13 @@ tl3.from('#f10', 500, { x: 200, opacity: 0 }, '=-1');
 tl3.from('#f09', 600, { x: -200, opacity: 0 }, '=-1');
 tl3.from('#f11', 400, { x: 200, opacity: 0 }, '=-1');
 
-tl4.from('#p-1', 2490, { x: 0, opacity: 0 }, '=-1');
-tl4.from('#p-2', 3310, { x: 0, opacity: 0 }, '=-1');
-tl4.from('#p-3', 2240, { x: 0, opacity: 0 }, '=-1');
-tl4.from('#p-4', 1250, { x: 0, opacity: 0 }, '=-1');
-tl4.from('#p-5', 4260, { x: 0, opacity: 0 }, '=-1');
-tl4.from('#p-6', 2700, { x: 0, opacity: 0 }, '=-1');
-tl4.from('#p-7', 480, { x: 0, opacity: 0 }, '=-1');
-tl4.from('#p-8', 5800, { x: 0, opacity: 0 }, '=-1');
-tl4.from('#pa-1', 5200, { x: 0, opacity: 0 }, '=-1');
-tl4.from('#pa-2', 5300, { x: 0, opacity: 0 }, '=-1');
-tl4.from('#pa-3', 5400, { x: 0, opacity: 0 }, '=-1');
-tl4.from('#pa-4', 5500, { x: 0, opacity: 0 }, '=-1');
-tl4.from('#pa-5', 5600, { x: 0, opacity: 0 }, '=-1');
-tl4.from('#pa-6', 5700, { x: 0, opacity: 0 }, '=-1');
-tl4.from('#pa-7', 6700, { x: 0, opacity: 0 }, '=-1');
-tl4.from('#pa-8', 5800, { x: 0, opacity: 0 }, '=-1');
-tl4.from('#pa-9', 4490, { x: 0, opacity: 0 }, '=-1');
-tl4.from('#pa-10', 5310, { x: 0, opacity: 0 }, '=-1');
-tl4.from('#pa-11', 4240, { x: 0, opacity: 0 }, '=-1');
-tl4.from('#pa-12', 5490, { y: -100, opacity: 0 }, '=-1');
+tl4.from('#pa-1', 3490, { x: 0, opacity: 0 }, '=-1');
+tl4.from('#pa-2', 3310, { x: 0, opacity: 0 }, '=-1');
+tl4.from('#pa-3', 2240, { x: 0, opacity: 0 }, '=-1');
+tl4.from('#pa-4', 1250, { x: 0, opacity: 0 }, '=-1');
+tl4.from('#pa-5', 4260, { x: 0, opacity: 0 }, '=-1');
 
 /////
-tl4.to('#p-1', 2490, { x: 0, opacity: 0 }, '=-1');
-tl4.to('#p-2', 3310, { x: 0, opacity: 0 }, '=-1');
-tl4.to('#p-3', 2240, { x: 0, opacity: 0 }, '=-1');
-tl4.to('#p-4', 1250, { x: 0, opacity: 0 }, '=-1');
-tl4.to('#p-5', 4260, { x: 0, opacity: 0 }, '=-1');
-tl4.to('#p-6', 2700, { x: 0, opacity: 0 }, '=-1');
-tl4.to('#p-7', 480, { x: 0, opacity: 0 }, '=-1');
-tl4.to('#p-8', 5800, { x: 0, opacity: 0 }, '=-1');
-tl4.to('#pa-1', 5200, { x: 0, opacity: 0 }, '=-1');
-tl4.to('#pa-2', 5300, { x: 0, opacity: 0 }, '=-1');
-tl4.to('#pa-3', 5400, { x: 0, opacity: 0 }, '=-1');
-tl4.to('#pa-4', 5500, { x: 0, opacity: 0 }, '=-1');
-tl4.to('#pa-5', 5600, { x: 0, opacity: 0 }, '=-1');
-tl4.to('#pa-6', 5700, { x: 0, opacity: 0 }, '=-1');
-tl4.to('#pa-7', 6700, { x: 0, opacity: 0 }, '=-1');
-tl4.to('#pa-8', 5800, { x: 0, opacity: 0 }, '=-1');
-tl4.to('#pa-9', 4490, { x: 0, opacity: 0 }, '=-1');
-tl4.to('#pa-10', 5310, { x: 0, opacity: 0 }, '=-1');
-tl4.to('#pa-11', 4240, { x: 0, opacity: 0 }, '=-1');
-tl4.from('#pa-12', 5490, { y: -100, opacity: 0 }, '=-1');
-tl4.from('#pa-13', 7810, { x: 150, opacity: 0 }, '=-1');
-tl4.from('#pa-14', 9240, { x: 300, opacity: 0 }, '=-1');
-tl4.from('#pa-15', 3990, { x: 0, opacity: 0 }, '=-1');
 
 // tl5.from('.bg3', 1, { backgroundColor: 'red' }, '=-1');
 // tl5.from('.bg3 h3:last-child', 0.3, { transform: 'translateX(0%)' }, '=-1');
@@ -350,7 +312,7 @@ const scene4 = new ScrollMagic.Scene({
   duration: '100%'
 })
 
-  .setPin('.sec-6')
+  .setPin('.box-right')
   .setTween(tl4)
   .addTo(controller);
 
