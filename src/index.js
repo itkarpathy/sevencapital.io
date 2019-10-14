@@ -96,11 +96,27 @@ tl4.from('#pa-2', 3310, { x: 0, opacity: 0 }, '=-1');
 tl4.from('#pa-3', 2240, { x: 0, opacity: 0 }, '=-1');
 tl4.from('#pa-4', 1250, { x: 0, opacity: 0 }, '=-1');
 tl4.from('#pa-5', 4260, { x: 0, opacity: 0 }, '=-1');
+tl4.from('#pa-1', 3490, { x: 0, opacity: 1 }, '=-1');
+tl4.from('#pa-2', 3310, { x: 0, opacity: 1 }, '=-1');
+tl4.from('#pa-3', 2240, { x: 0, opacity: 1 }, '=-1');
+tl4.from('#pa-4', 1250, { x: 0, opacity: 1 }, '=-1');
+tl4.from('#pa-5', 4260, { x: 0, opacity: 1 }, '=-1');
 tl4.from('#pa-6', 3490, { x: 0, opacity: 0 }, '=-1');
 tl4.from('#pa-7', 3310, { x: 0, opacity: 0 }, '=-1');
-tl4.from('#pa-8', 2240, { x: 0, opacity: 0 }, '=-1');
-tl4.from('#pa-9', 1250, { x: 0, opacity: 0 }, '=-1');
-tl4.from('#pa-10', 4260, { x: 0, opacity: 0 }, '=-1');
+tl4.from('#pa-8', 3540, { x: 0, opacity: 0 }, '=-1');
+tl4.from('#pa-9', 3650, { x: 0, opacity: 0 }, '=-1');
+tl4.from('#pa-10', 3726, { x: 0, opacity: 0 }, '=-1');
+tl4.from('#pa-6', 4490, { x: 0, opacity: 1 }, '=-1');
+tl4.from('#pa-7', 3310, { x: 0, opacity: 1 }, '=-1');
+tl4.from('#pa-8', 3540, { x: 0, opacity: 1 }, '=-1');
+tl4.from('#pa-9', 3650, { x: 0, opacity: 1 }, '=-1');
+tl4.from('#pa-10', 3726, { x: 0, opacity: 1 }, '=-1');
+
+// tl4.from('#pa-6', 3490, { x: 0, opacity: 0 }, '=-1');
+// tl4.from('#pa-7', 3310, { x: 0, opacity: 0 }, '=-1');
+// tl4.from('#pa-8', 2240, { x: 0, opacity: 0 }, '=-1');
+// tl4.from('#pa-9', 1250, { x: 0, opacity: 0 }, '=-1');
+// tl4.from('#pa-10', 4260, { x: 0, opacity: 0 }, '=-1');
 /////
 
 // tl5.from('.bg3', 1, { backgroundColor: 'red' }, '=-1');

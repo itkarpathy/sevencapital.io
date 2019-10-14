@@ -18,10 +18,6 @@ section {
     min-height: 250vh;
     display: flex;
 
-    img {
-      width: auto !important;
-    }
-
     .trigger-6-1 {
       position: absolute;
       top: 5%;
@@ -30,92 +26,71 @@ section {
     }
 
     .box-right {
-      top: 10%;
-      right: 2%;
+      top: 12%;
+      left: 57%;
       position: fixed;
       height: 700px;
-      width: 800px;
+      width: 700px;
       -webkit-box-flex: 1;
       flex: 1;
       font-size: 30px;
       background-repeat: no-repeat;
 
-      &.para-6 {
-        background-repeat: no-repeat;
+      img {
         width: auto;
-        height: 500px;
-        top: 0;
-        right: 0;
+        top: 0%;
+        left: 20%;
         position: absolute;
-        z-index: 2;
+
+        // &.para-6 {
+        //   background-repeat: no-repeat;
+        //   width: auto;
+        //   height: 500px;
+        //   top: 0;
+        //   left: 5%;
+        //   position: absolute;
+        //   z-index: 2;
 
         &:nth-child(1) {
-          height: 200px;
+          width: auto;
           top: 0%;
           left: 0%;
         }
         &:nth-child(2) {
-          top: 30%;
-          left: 35%;
+          top: 13%;
+          left: -1%;
         }
         &:nth-child(3) {
-          top: 33%;
-          left: 0;
+          top: 13%;
+          left: 36%;
         }
         &:nth-child(4) {
-          top: 15%;
-          left: 50%;
+          top: 34%;
+          left: 0%;
         }
         &:nth-child(5) {
-          top: 20%;
-          left: 64%;
-          background: url('/src/images/bricks.jpg');
+          top: 51%;
+          left: 0%;
         }
         &:nth-child(6) {
-          top: 9%;
-          left: 63%;
+          top: 0%;
+          left: -3%;
         }
         &:nth-child(7) {
-          top: 40%;
-          left: 45%;
+          top: 13%;
+          left: -56px;
         }
         &:nth-child(8) {
-          top: 0%;
-          right: 0%;
+          top: 32%;
+          left: -14%;
         }
         &:nth-child(9) {
-          top: 15%;
-          left: 50%;
+          top: 32%;
+          left: 22%;
         }
         &:nth-child(10) {
-          top: 7%;
-          left: 55%;
-        }
-        &:nth-child(11) {
-          top: 35%;
-          left: 40%;
-          background: #ab9548;
-          transition: 0.9s all ease-in-out;
-        }
-        &:nth-child(12) {
-          width: 371px;
-          top: 17%;
-          transition: 1.2s all ease-in-out;
-        }
-        &:nth-child(13) {
-          top: 11%;
-          left: 50%;
-          transition: 0.9s all ease-in-out;
-        }
-        &:nth-child(14) {
-          top: 29%;
-          left: 54%;
-          transition: 0.9s all ease-in-out;
-        }
-        &:nth-child(15) {
-          top: 35%;
-          left: 40%;
-          transition: 0.9s all ease-in-out;
+          top: 50%;
+          left: 1%;
         }
       }
     }
