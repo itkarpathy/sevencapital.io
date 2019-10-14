@@ -118,26 +118,26 @@ tl21.to('.btn-side', 3726, { border: '1px solid' }, '=-1');
 // tl19.from('#btn-side', 3726, { border: 'none' }, '=-1');
 tl19.to('#btn-side', 2726, { border: '1px solid white' }, '=-1');
 
-tl4.from('#pa-1', 3490, { x: 0, opacity: 0 }, '=-1');
-tl4.from('#pa-2', 3610, { x: 0, opacity: 0 }, '=-1');
-tl4.from('#pa-3', 3800, { x: 0, opacity: 0 }, '=-1');
-tl4.from('#pa-4', 4000, { x: 0, opacity: 0 }, '=-1');
-tl4.from('#pa-5', 4260, { x: 0, opacity: 0 }, '=-1');
+tl4.from('#pa-1', 7590, { x: 0, opacity: 0 }, '=-1');
+tl4.from('#pa-2', 7590, { x: 0, opacity: 0 }, '=-1');
+tl4.from('#pa-3', 7590, { x: 0, opacity: 0 }, '=-1');
+tl4.from('#pa-4', 7590, { x: 0, opacity: 0 }, '=-1');
+tl4.from('#pa-5', 7590, { x: 0, opacity: 0 }, '=-1');
 tl4.from('#pa-1', 6490, { x: 0, opacity: 1 }, '=-1');
 tl4.from('#pa-2', 5310, { x: 0, opacity: 1 }, '=-1');
 tl4.from('#pa-3', 4240, { x: 0, opacity: 1 }, '=-1');
 tl4.from('#pa-4', 3250, { x: 0, opacity: 1 }, '=-1');
-tl4.from('#pa-5', 3260, { x: 0, opacity: 1 }, '=-1');
-tl4.from('#pa-6', 4490, { x: 0, opacity: 0 }, '=-1');
-tl4.from('#pa-7', 4310, { x: 0, opacity: 0 }, '=-1');
-tl4.from('#pa-8', 4540, { x: 0, opacity: 0 }, '=-1');
-tl4.from('#pa-9', 4650, { x: 0, opacity: 0 }, '=-1');
-tl4.from('#pa-10', 4726, { x: 0, opacity: 0 }, '=-1');
-tl4.from('#pa-6', 4490, { x: 0, opacity: 1 }, '=-1');
-tl4.from('#pa-7', 4310, { x: 0, opacity: 1 }, '=-1');
-tl4.from('#pa-8', 4540, { x: 0, opacity: 1 }, '=-1');
-tl4.from('#pa-9', 4650, { x: 0, opacity: 1 }, '=-1');
-tl4.from('#pa-10', 4726, { x: 0, opacity: 1 }, '=-1');
+tl4.from('#pa-5', 6260, { x: 0, opacity: 1 }, '=-1');
+tl4.from('#pa-6', 9590, { x: 0, opacity: 0 }, '=-1');
+tl4.from('#pa-7', 6590, { x: 0, opacity: 0 }, '=-1');
+tl4.from('#pa-8', 8590, { x: 0, opacity: 0 }, '=-1');
+tl4.from('#pa-9', 8590, { x: 0, opacity: 0 }, '=-1');
+tl4.from('#pa-10', 8590, { x: 0, opacity: 0 }, '=-1');
+tl4.from('#pa-6', 6590, { x: 0, opacity: 1 }, '=-1');
+tl4.from('#pa-7', 6510, { x: 0, opacity: 1 }, '=-1');
+tl4.from('#pa-8', 6540, { x: 0, opacity: 1 }, '=-1');
+tl4.from('#pa-9', 6650, { x: 0, opacity: 1 }, '=-1');
+tl4.from('#pa-10', 6726, { x: 0, opacity: 1 }, '=-1');
 
 // tl4.from('#pa-6', 3490, { x: 0, opacity: 0 }, '=-1');
 // tl4.from('#pa-7', 3310, { x: 0, opacity: 0 }, '=-1');
@@ -238,7 +238,7 @@ const scene20 = new ScrollMagic.Scene({
   duration: '100%'
 })
 
-  .setPin('.trigger-6-2')
+  .setPin('.sec-6 .navbar')
   .setTween(tl20)
   .addTo(controller);
 
@@ -419,7 +419,7 @@ const scene4 = new ScrollMagic.Scene({
   duration: '100%'
 })
 
-  .setPin('.box-right')
+  .setPin('.trigger-6-2')
   .setTween(tl4)
   .addTo(controller);
 

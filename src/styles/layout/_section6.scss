@@ -27,14 +27,14 @@ section {
 
     .trigger-6-2 {
       position: absolute;
-      top: 5%;
+      top: 20%;
       left: 0;
       width: 200px;
     }
 
     .box-right {
-      top: 12%;
-      left: 57%;
+      top: 18%;
+      left: 60%;
       position: fixed;
       height: 700px;
       width: 700px;
@@ -42,6 +42,7 @@ section {
       flex: 1;
       font-size: 30px;
       background-repeat: no-repeat;
+      transition-delay: 1s;
 
       img {
         width: auto;
@@ -64,19 +65,19 @@ section {
           left: 0%;
         }
         &:nth-child(2) {
-          top: 13%;
+          top: 20%;
           left: -1%;
         }
         &:nth-child(3) {
-          top: 13%;
+          top: 20%;
           left: 36%;
         }
         &:nth-child(4) {
-          top: 34%;
+          top: 50%;
           left: 0%;
         }
         &:nth-child(5) {
-          top: 51%;
+          top: 75%;
           left: 0%;
         }
         &:nth-child(6) {
@@ -84,19 +85,20 @@ section {
           left: 9%;
         }
         &:nth-child(7) {
-          top: 13%;
+          transition-delay: 1s;
+          top: 20%;
           left: 27px;
         }
         &:nth-child(8) {
-          top: 32%;
+          top: 50%;
           left: -12px;
         }
         &:nth-child(9) {
-          top: 32%;
+          top: 50%;
           left: 35%;
         }
         &:nth-child(10) {
-          top: 50%;
+          top: 75%;
           left: 14%;
         }
       }
