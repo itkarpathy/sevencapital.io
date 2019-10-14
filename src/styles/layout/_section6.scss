@@ -23,17 +23,35 @@ section {
       top: 0%;
       left: 0;
       width: 200px;
+      border-bottom: 3px solid red;
     }
 
     .trigger-6-2 {
       position: absolute;
-      top: 20%;
+      top: 16%;
       left: 0;
       width: 200px;
+      border-bottom: 3px solid rgb(4, 7, 33);
+    }
+
+    .trigger-6-3 {
+      position: absolute;
+      top: 32%;
+      left: 0;
+      width: 200px;
+      border-bottom: 3px solid rgb(140, 5, 167);
+    }
+
+    .trigger-6-4 {
+      position: absolute;
+      top: 38%;
+      left: 0;
+      width: 200px;
+      border-bottom: 3px solid rgb(115, 191, 10);
     }
 
     .box-right {
-      top: 18%;
+      top: 8%;
       left: 60%;
       position: fixed;
       height: 700px;
@@ -42,7 +60,6 @@ section {
       flex: 1;
       font-size: 30px;
       background-repeat: no-repeat;
-      transition-delay: 1s;
 
       img {
         width: auto;
@@ -85,7 +102,6 @@ section {
           left: 9%;
         }
         &:nth-child(7) {
-          transition-delay: 1s;
           top: 20%;
           left: 27px;
         }
