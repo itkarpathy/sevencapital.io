@@ -20,9 +20,18 @@ section {
 
     .trigger-6-1 {
       position: absolute;
+      top: 0%;
+      left: 0;
+      width: 200px;
+      border-bottom: 2px solid red;
+    }
+
+    .trigger-6-2 {
+      position: absolute;
       top: 5%;
       left: 0;
       width: 200px;
+      border-bottom: 2px solid rgb(0, 81, 255);
     }
 
     .box-right {
@@ -74,23 +83,23 @@ section {
         }
         &:nth-child(6) {
           top: 0%;
-          left: -3%;
+          left: 9%;
         }
         &:nth-child(7) {
           top: 13%;
-          left: -56px;
+          left: 27px;
         }
         &:nth-child(8) {
           top: 32%;
-          left: -14%;
+          left: -12px;
         }
         &:nth-child(9) {
           top: 32%;
-          left: 22%;
+          left: 35%;
         }
         &:nth-child(10) {
           top: 50%;
-          left: 1%;
+          left: 14%;
         }
       }
     }

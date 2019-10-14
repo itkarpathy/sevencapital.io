@@ -77,6 +77,7 @@ var tl15 = new TimelineMax();
 var tl16 = new TimelineMax();
 var tl17 = new TimelineMax();
 var tl18 = new TimelineMax();
+var tl19 = new TimelineMax();
 
 const controller = new ScrollMagic.Controller({ addIndicators: true });
 
@@ -91,26 +92,30 @@ tl3.from('#f10', 500, { x: 200, opacity: 0 }, '=-1');
 tl3.from('#f09', 600, { x: -200, opacity: 0 }, '=-1');
 tl3.from('#f11', 400, { x: 200, opacity: 0 }, '=-1');
 
+////////
+
+tl19.to('#btn-side', 3726, { border: '1px solid white', opacity: 1 }, '=-1');
+tl19.from('#btn-side', 3726, { border: '1px solid white', opacity: 1 }, '=-1');
 tl4.from('#pa-1', 3490, { x: 0, opacity: 0 }, '=-1');
-tl4.from('#pa-2', 3310, { x: 0, opacity: 0 }, '=-1');
-tl4.from('#pa-3', 2240, { x: 0, opacity: 0 }, '=-1');
-tl4.from('#pa-4', 1250, { x: 0, opacity: 0 }, '=-1');
+tl4.from('#pa-2', 3610, { x: 0, opacity: 0 }, '=-1');
+tl4.from('#pa-3', 3800, { x: 0, opacity: 0 }, '=-1');
+tl4.from('#pa-4', 4000, { x: 0, opacity: 0 }, '=-1');
 tl4.from('#pa-5', 4260, { x: 0, opacity: 0 }, '=-1');
-tl4.from('#pa-1', 3490, { x: 0, opacity: 1 }, '=-1');
-tl4.from('#pa-2', 3310, { x: 0, opacity: 1 }, '=-1');
-tl4.from('#pa-3', 2240, { x: 0, opacity: 1 }, '=-1');
-tl4.from('#pa-4', 1250, { x: 0, opacity: 1 }, '=-1');
-tl4.from('#pa-5', 4260, { x: 0, opacity: 1 }, '=-1');
-tl4.from('#pa-6', 3490, { x: 0, opacity: 0 }, '=-1');
-tl4.from('#pa-7', 3310, { x: 0, opacity: 0 }, '=-1');
-tl4.from('#pa-8', 3540, { x: 0, opacity: 0 }, '=-1');
-tl4.from('#pa-9', 3650, { x: 0, opacity: 0 }, '=-1');
-tl4.from('#pa-10', 3726, { x: 0, opacity: 0 }, '=-1');
+tl4.from('#pa-1', 6490, { x: 0, opacity: 1 }, '=-1');
+tl4.from('#pa-2', 5310, { x: 0, opacity: 1 }, '=-1');
+tl4.from('#pa-3', 4240, { x: 0, opacity: 1 }, '=-1');
+tl4.from('#pa-4', 3250, { x: 0, opacity: 1 }, '=-1');
+tl4.from('#pa-5', 3260, { x: 0, opacity: 1 }, '=-1');
+tl4.from('#pa-6', 4490, { x: 0, opacity: 0 }, '=-1');
+tl4.from('#pa-7', 4310, { x: 0, opacity: 0 }, '=-1');
+tl4.from('#pa-8', 4540, { x: 0, opacity: 0 }, '=-1');
+tl4.from('#pa-9', 4650, { x: 0, opacity: 0 }, '=-1');
+tl4.from('#pa-10', 4726, { x: 0, opacity: 0 }, '=-1');
 tl4.from('#pa-6', 4490, { x: 0, opacity: 1 }, '=-1');
-tl4.from('#pa-7', 3310, { x: 0, opacity: 1 }, '=-1');
-tl4.from('#pa-8', 3540, { x: 0, opacity: 1 }, '=-1');
-tl4.from('#pa-9', 3650, { x: 0, opacity: 1 }, '=-1');
-tl4.from('#pa-10', 3726, { x: 0, opacity: 1 }, '=-1');
+tl4.from('#pa-7', 4310, { x: 0, opacity: 1 }, '=-1');
+tl4.from('#pa-8', 4540, { x: 0, opacity: 1 }, '=-1');
+tl4.from('#pa-9', 4650, { x: 0, opacity: 1 }, '=-1');
+tl4.from('#pa-10', 4726, { x: 0, opacity: 1 }, '=-1');
 
 // tl4.from('#pa-6', 3490, { x: 0, opacity: 0 }, '=-1');
 // tl4.from('#pa-7', 3310, { x: 0, opacity: 0 }, '=-1');
@@ -164,6 +169,16 @@ tl13.from('#img555', 300, { x: 0, opacity: 0 }, '=-1');
 tl14.from('#img666', 300, { x: 0, opacity: 0 }, '=-1');
 tl15.from('#img777', 300, { x: 0, opacity: 0 }, '=-1');
 tl16.from('#img888', 300, { x: 0, opacity: 0 }, '=-1');
+////////
+const scene19 = new ScrollMagic.Scene({
+  triggerElement: '.sec-6 .trigger-6-1',
+  triggerHook: 'onLeave',
+  duration: '100%'
+})
+
+  .setPin('.sec-6 .trigger-6-2 ')
+  .setTween(tl19)
+  .addTo(controller);
 
 ////////
 const scene18 = new ScrollMagic.Scene({
