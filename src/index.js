@@ -52,7 +52,7 @@ window.addEventListener('scroll', scrollCheck);
 function sticky() {
   const sc = scrollCheck();
 
-  if (sc >= 50 && window.innerWidth > 675) {
+  if (sc >= 10 && window.innerWidth > 675) {
     nav.classList.add('sticky');
   } else {
     nav.classList.remove('sticky');
@@ -78,10 +78,22 @@ var tl16 = new TimelineMax();
 var tl17 = new TimelineMax();
 var tl18 = new TimelineMax();
 var tl19 = new TimelineMax();
+var tl20 = new TimelineMax();
+var tl21 = new TimelineMax();
+var tl22 = new TimelineMax();
+var tl23 = new TimelineMax();
+var tl24 = new TimelineMax();
 
 const controller = new ScrollMagic.Controller({ addIndicators: true });
 
 new ScrollMagic.Scene().addTo(controller);
+tl24.from('#nav', 100, { background: '#ab9548' });
+tl24.to('#nav', 100, { background: 'rgba(0,0,0,.5)' });
+tl23.from('#nav', 100, { background: '#ab9548' });
+tl23.to('#nav', 100, { background: '#ab9548' });
+
+tl22.from('#nav', 100, { background: '' });
+tl22.from('#nav', 100, { background: '#ab9548' });
 
 tl.from('blockquote', 1, { x: -400, opacity: 0 });
 tl.from('.box-img', 1, { x: 300, opacity: 0, scale: '1.2' });
@@ -94,8 +106,18 @@ tl3.from('#f11', 400, { x: 200, opacity: 0 }, '=-1');
 
 ////////
 
-tl19.to('#btn-side', 3726, { border: '1px solid white', opacity: 1 }, '=-1');
-tl19.from('#btn-side', 3726, { border: '1px solid white', opacity: 1 }, '=-1');
+// tl20.to('#nav', 3726, { background: '#ab9548' }, '=-1');
+tl20.from('#nav', 3726, { background: '#ab9548' }, '=-1');
+tl20.to('#nav', 4726, { background: 'rgba(0,0,0,.5)' }, '=-1');
+
+tl21.to('#nav', 3726, { background: '#ab9548' }, '=-1');
+tl21.from('#nav', 3726, { background: 'rgba(0,0,0,.5)' }, '=-1');
+tl21.to('.btn-side', 3726, { border: '1px solid' }, '=-1');
+// tl21.to('#btn-side', 3726, { border: '1px solid' }, '=-1');
+////////
+// tl19.from('#btn-side', 3726, { border: 'none' }, '=-1');
+tl19.to('#btn-side', 2726, { border: '1px solid white' }, '=-1');
+
 tl4.from('#pa-1', 3490, { x: 0, opacity: 0 }, '=-1');
 tl4.from('#pa-2', 3610, { x: 0, opacity: 0 }, '=-1');
 tl4.from('#pa-3', 3800, { x: 0, opacity: 0 }, '=-1');
@@ -170,13 +192,63 @@ tl14.from('#img666', 300, { x: 0, opacity: 0 }, '=-1');
 tl15.from('#img777', 300, { x: 0, opacity: 0 }, '=-1');
 tl16.from('#img888', 300, { x: 0, opacity: 0 }, '=-1');
 ////////
+const scene24 = new ScrollMagic.Scene({
+  triggerElement: '.sec-8 .scroll-trigger8',
+  triggerHook: 'onLeave',
+  duration: '100%'
+})
+
+  .setPin('.sec-9 .navbar')
+  .setTween(tl24)
+  .addTo(controller);
+
+const scene23 = new ScrollMagic.Scene({
+  triggerElement: '.sec-5 .scroll-trigger-5-2',
+  triggerHook: 'onLeave',
+  duration: '100%'
+})
+
+  .setPin('.sec-5 .navbar')
+  .setTween(tl23)
+  .addTo(controller);
+
+const scene22 = new ScrollMagic.Scene({
+  triggerElement: '.sec-1',
+  triggerHook: 'onLeave',
+  duration: '100%'
+})
+
+  .setPin('.sec-1 .navbar')
+  .setTween(tl22)
+  .addTo(controller);
+
+const scene21 = new ScrollMagic.Scene({
+  triggerElement: '.sec-7',
+  triggerHook: 'onLeave',
+  duration: '100%'
+})
+
+  .setPin('.sec-7 .navbar')
+  .setTween(tl21)
+  .addTo(controller);
+
+const scene20 = new ScrollMagic.Scene({
+  triggerElement: '.sec-6 .trigger-6-1',
+  triggerHook: 'onLeave',
+  duration: '100%'
+})
+
+  .setPin('.trigger-6-2')
+  .setTween(tl20)
+  .addTo(controller);
+
 const scene19 = new ScrollMagic.Scene({
   triggerElement: '.sec-6 .trigger-6-1',
   triggerHook: 'onLeave',
   duration: '100%'
 })
 
-  .setPin('.sec-6 .trigger-6-2 ')
+  .setPin('.trigger-6-1')
   .setTween(tl19)
   .addTo(controller);
 
@@ -321,15 +393,15 @@ const scene5 = new ScrollMagic.Scene({
   .setTween(tl5)
   .addTo(controller);
 
-const scene = new ScrollMagic.Scene({
-  triggerElement: '.sec-7',
-  triggerHook: 'onLeave',
-  duration: '100%'
-})
+// const scene = new ScrollMagic.Scene({
+//   triggerElement: '.sec-7',
+//   triggerHook: 'onLeave',
+//   duration: '100%'
+// })
 
-  .setPin('.sec-7')
-  .setTween(tl)
-  .addTo(controller);
+//   .setPin('.sec-7')
+//   .setTween(tl)
+//   .addTo(controller);
 
 const scene3 = new ScrollMagic.Scene({
   triggerElement: '.sec-4',

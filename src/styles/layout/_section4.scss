@@ -30,7 +30,7 @@ section {
       height: 40px !important;
       background: #ab9548;
       text-transform: uppercase;
-      z-index: 200;
+      z-index: 1;
       font-size: 23px;
       transition: 0.6s all ease-in-out;
       text-align: center;
@@ -87,8 +87,6 @@ section {
       text-transform: uppercase;
       font-weight: 600;
 
-      
-
       &.com-1 {
         top: 10%;
         left: 5%;
@@ -99,9 +97,9 @@ section {
           position: absolute;
           background-color: #ab9548;
           padding: 10px 40px 10px 40px;
-          -webkit-box-shadow: -1px -1px 26px -10px rgba(0,0,0,0.75);
-          -moz-box-shadow: -1px -1px 26px -10px rgba(0,0,0,0.75);
-          box-shadow: -1px -1px 26px -10px rgba(0,0,0,0.75);
+          -webkit-box-shadow: -1px -1px 26px -10px rgba(0, 0, 0, 0.75);
+          -moz-box-shadow: -1px -1px 26px -10px rgba(0, 0, 0, 0.75);
+          box-shadow: -1px -1px 26px -10px rgba(0, 0, 0, 0.75);
         }
       }
 
@@ -115,9 +113,9 @@ section {
           position: absolute;
           background-color: #ab9548;
           padding: 10px 40px 10px 40px;
-          -webkit-box-shadow: -1px -1px 26px -10px rgba(0,0,0,0.75);
-          -moz-box-shadow: -1px -1px 26px -10px rgba(0,0,0,0.75);
-          box-shadow: -1px -1px 26px -10px rgba(0,0,0,0.75);
+          -webkit-box-shadow: -1px -1px 26px -10px rgba(0, 0, 0, 0.75);
+          -moz-box-shadow: -1px -1px 26px -10px rgba(0, 0, 0, 0.75);
+          box-shadow: -1px -1px 26px -10px rgba(0, 0, 0, 0.75);
         }
       }
 
@@ -131,9 +129,9 @@ section {
           position: absolute;
           background-color: #ab9548;
           padding: 10px 40px 10px 40px;
-          -webkit-box-shadow: -1px -1px 26px -10px rgba(0,0,0,0.75);
-          -moz-box-shadow: -1px -1px 26px -10px rgba(0,0,0,0.75);
-          box-shadow: -1px -1px 26px -10px rgba(0,0,0,0.75);
+          -webkit-box-shadow: -1px -1px 26px -10px rgba(0, 0, 0, 0.75);
+          -moz-box-shadow: -1px -1px 26px -10px rgba(0, 0, 0, 0.75);
+          box-shadow: -1px -1px 26px -10px rgba(0, 0, 0, 0.75);
         }
       }
     }
