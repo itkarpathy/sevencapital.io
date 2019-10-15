@@ -52,7 +52,7 @@ window.addEventListener('scroll', scrollCheck);
 function sticky() {
   const sc = scrollCheck();
 
-  if (sc >= 10 && window.innerWidth > 675) {
+  if (sc >= 1 && window.innerWidth > 675) {
     nav.classList.add('sticky');
   } else {
     nav.classList.remove('sticky');
@@ -80,21 +80,21 @@ var tl18 = new TimelineMax();
 var tl19 = new TimelineMax();
 var tl20 = new TimelineMax();
 var tl21 = new TimelineMax();
-var tl22 = new TimelineMax();
-var tl23 = new TimelineMax();
-var tl24 = new TimelineMax();
+// var tl22 = new TimelineMax();
+// var tl23 = new TimelineMax();
+// var tl24 = new TimelineMax();
 var tl25 = new TimelineMax();
 
 const controller = new ScrollMagic.Controller({ addIndicators: true });
 
 new ScrollMagic.Scene().addTo(controller);
-tl24.from('#nav', 100, { background: '#ab9548' });
-tl24.to('#nav', 100, { background: 'rgba(0,0,0,.5)' });
-tl23.from('#nav', 100, { background: '#ab9548' });
-tl23.to('#nav', 100, { background: '#ab9548' });
+// tl24.from('#nav', 100, { background: '' });
+// tl24.to('#nav', 100, { background: '' });
+// tl23.from('#nav', 100, { background: '' });
+// tl23.to('#nav', 100, { background: '' });
 
-tl22.from('#nav', 100, { background: '' });
-tl22.from('#nav', 100, { background: '#ab9548' });
+// tl22.to('#nav', 100, { background: '' });
+// tl22.from('#nav', 100, { background: '#ab9548' });
 
 tl.from('blockquote', 1, { x: -400, opacity: 0 });
 tl.from('.box-img', 1, { x: 300, opacity: 0, scale: '1.2' });
@@ -108,11 +108,11 @@ tl3.from('#f11', 400, { x: 200, opacity: 0 }, '=-1');
 ////////
 
 // tl20.to('#nav', 3726, { background: '#ab9548' }, '=-1');
-tl20.from('#nav', 3726, { background: '#ab9548' }, '=-1');
-tl20.to('#nav', 4726, { background: 'rgba(0,0,0,.5)' }, '=-1');
+// tl20.from('#nav', 3726, { background: '' }, '=-1');
+// tl20.to('#nav', 4726, { background: '' }, '=-1');
 
-tl21.to('#nav', 3726, { background: '#ab9548' }, '=-1');
-tl21.from('#nav', 3726, { background: 'rgba(0,0,0,.5)' }, '=-1');
+// tl21.to('#nav', 3726, { background: '' }, '=-1');
+// tl21.from('#nav', 3726, { background: '' }, '=-1');
 tl21.to('.btn-side', 3726, { border: '1px solid' }, '=-1');
 // tl21.to('#btn-side', 3726, { border: '1px solid' }, '=-1');
 ////////
@@ -203,35 +203,35 @@ const scene25 = new ScrollMagic.Scene({
   .setTween(tl25)
   .addTo(controller);
 
-const scene24 = new ScrollMagic.Scene({
-  triggerElement: '.sec-8 .scroll-trigger8',
-  triggerHook: 'onLeave',
-  duration: '100%'
-})
+// const scene24 = new ScrollMagic.Scene({
+//   triggerElement: '.sec-8 .scroll-trigger8',
+//   triggerHook: 'onLeave',
+//   duration: '100%'
+// })
 
-  .setPin('.sec-9 .navbar')
-  .setTween(tl24)
-  .addTo(controller);
+//   .setPin('.sec-9 .navbar')
+//   .setTween(tl24)
+//   .addTo(controller);
 
-const scene23 = new ScrollMagic.Scene({
-  triggerElement: '.sec-5 .scroll-trigger-5-2',
-  triggerHook: 'onLeave',
-  duration: '100%'
-})
+// const scene23 = new ScrollMagic.Scene({
+//   triggerElement: '.sec-5 .scroll-trigger-5-2',
+//   triggerHook: 'onLeave',
+//   duration: '100%'
+// })
 
-  .setPin('.sec-5 .navbar')
-  .setTween(tl23)
-  .addTo(controller);
+//   .setPin('.sec-5 .navbar')
+//   .setTween(tl23)
+//   .addTo(controller);
 
-const scene22 = new ScrollMagic.Scene({
-  triggerElement: '.sec-1',
-  triggerHook: 'onLeave',
-  duration: '100%'
-})
+// const scene22 = new ScrollMagic.Scene({
+//   triggerElement: '.sec-1',
+//   triggerHook: 'onLeave',
+//   duration: '100%'
+// })
 
-  .setPin('.sec-1 .navbar')
-  .setTween(tl22)
-  .addTo(controller);
+//   .setPin('.sec-1 .navbar')
+//   .setTween(tl22)
+//   .addTo(controller);
 
 const scene21 = new ScrollMagic.Scene({
   triggerElement: '.sec-7',

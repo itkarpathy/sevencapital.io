@@ -38,7 +38,6 @@ header .navbar {
   min-height: 8vh;
 }
 
-
 header {
   position: relative;
   background-size: cover;
@@ -60,7 +59,7 @@ header {
     .line {
       list-style-type: none;
       width: 35px;
-      height: 2px;
+      height: 3px;
       margin-bottom: 5px;
       background: #8c8888;
       transition: 0.4s all ease-out;
@@ -72,6 +71,7 @@ header {
     align-items: center;
     display: flex;
     justify-content: space-evenly;
+    overflow: hidden;
 
     .menu-right {
       -webkit-transition: 1s all ease-out;
@@ -84,7 +84,7 @@ header {
     a {
       text-decoration: none;
       font-weight: 400;
-      color: rgb(89, 89, 89);
+      color: #595959;
       transition: 0.2s all ease-out;
 
       &:hover {
@@ -95,24 +95,12 @@ header {
     }
 
     &.sticky {
+      background: white;
       position: fixed;
       top: 0;
       width: 100%;
-      background: #ab9548;
       transition: 0.5s all ease-out;
-
-      a {
-        color: white;
-
-        &:hover {
-          color: white;
-          transition: 0.5s all ease-out;
-
-          span {
-            color: black;
-          }
-        }
-      }
+      padding-top: 0px;
     }
   }
 }
