@@ -29,7 +29,7 @@ section {
   }
 
   &.sec-3 {
-    background-image: url('./images/fazeley_1.jpg');
+    background-image: url('./images/fazUp.jpg');
     color: white;
     display: flex;
     flex-direction: column;
@@ -45,7 +45,7 @@ section {
       left: 0;
       height: 100%;
       width: 100%;
-      background-size: cover;
+      object-fit:contain;
     }
 
     .scroll-trigger-3-1 {
@@ -118,5 +118,12 @@ section {
         margin-bottom: 15px;
       }
     }
+  }
+}
+
+
+@media (max-width:670px){
+  .bot{
+     width: 300px;
   }
 }

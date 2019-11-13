@@ -120,11 +120,11 @@ section {
       }
 
       &.com-3 {
-        top: 54% !important;
+        top: 54%;
         left: 18%;
 
         & #tomorrow {
-          left: -18%;
+          left: 0;
           top: 38%;
           position: absolute;
           background-color: #ab9548;
@@ -142,4 +142,63 @@ section {
       text-shadow: 2px 3px 2px rgba(1, 1, 1, 0.8);
     }
   }
+}
+
+
+@media(max-width:  670px){
+p{
+  font-size: 23px;
+}
+
+.sec-4{
+  min-height: 130vh!important;
+}
+
+.sec-4 img{
+  width:80%!important;
+}
+
+.sec-4 .title{
+  &.com-1{
+    left:0!important;
+
+    & #yesterday{
+     left: 47%!important;
+    top: 14%!important;
+    }
+  }
+
+  &.com-2{
+    top:35%!important;
+    
+    & #today{
+      left:0!important;
+    }
+  }
+
+  &.com-3{
+  top: 67% !important;
+  width: 100%!important;
+  left:0!important;
+
+  & #tomorrow{
+    left: 34% !important;
+    top: 65%!important;
+    }
+  }
+  
+}
+
+.sec-4 .join3{
+      bottom: 0!important;
+    left: 50%!important;
+}
+
+.sec-4 .bot{
+  margin: 20px auto !important;
+  padding:7px!important;
+  height:0!important;
+  width: 300px;
+}
+  
 }

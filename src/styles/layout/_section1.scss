@@ -54,3 +54,14 @@ section {
     }
   }
 }
+
+@media (max-width: 670px) {
+  .title-1{
+        width: 100%!important;
+    font-size: 47px!important;
+  }
+
+   #btn-side {
+    display: none;
+  }
+}
