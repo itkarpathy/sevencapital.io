@@ -151,7 +151,7 @@ p{
 }
 
 .sec-4{
-  min-height: 130vh!important;
+  min-height: 112vh!important;
 }
 
 .sec-4 img{
@@ -161,6 +161,7 @@ p{
 .sec-4 .title{
   &.com-1{
     left:0!important;
+    top: 6% !important;
 
     & #yesterday{
      left: 47%!important;
@@ -169,7 +170,7 @@ p{
   }
 
   &.com-2{
-    top:35%!important;
+    top:28%!important;
     
     & #today{
       left:0!important;
@@ -177,7 +178,7 @@ p{
   }
 
   &.com-3{
-  top: 67% !important;
+  top: 57% !important;
   width: 100%!important;
   left:0!important;
 

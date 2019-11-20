@@ -81,76 +81,197 @@ var tl19 = new TimelineMax();
 var tl20 = new TimelineMax();
 var tl21 = new TimelineMax();
 var tl22 = new TimelineMax();
-// var tl23 = new TimelineMax();
-// var tl24 = new TimelineMax();
 var tl25 = new TimelineMax();
+var tl26 = new TimelineMax();
+var tl27 = new TimelineMax();
+var tl28 = new TimelineMax();
+var tl29 = new TimelineMax();
+var tl30 = new TimelineMax();
+var tl31 = new TimelineMax();
+var tl32 = new TimelineMax();
+var tl33 = new TimelineMax();
+var tl34 = new TimelineMax();
+var tl35 = new TimelineMax();
+var tl36 = new TimelineMax();
+var tl37 = new TimelineMax();
+var tl38 = new TimelineMax();
+var tl39 = new TimelineMax();
+var tl40 = new TimelineMax();
+var tl41 = new TimelineMax();
 
 const controller = new ScrollMagic.Controller({ addIndicators: true });
 
 new ScrollMagic.Scene().addTo(controller);
-// tl24.from('#nav', 100, { background: '' });
-// tl24.to('#nav', 100, { background: '' });
-// tl23.from('#nav', 100, { background: '' });
-// tl23.to('#nav', 100, { background: '' });
-// tl22.to('#nav', 100, { background: '' });
-// tl22.from('#nav', 100, { background: '#ab9548' });
+
+//mobile version animation control below here: 
+
+const mq_mobile = window.matchMedia("(max-width: 670px)");
+if (mq_mobile.matches) {
+  tl32.from('#f10', 500, { x: 200, opacity: 0 }, '=-1');
+  tl32.from('#f09', 600, { x: -200, opacity: 0 }, '=-1');
+  tl32.from('#f11', 400, { x: 200, opacity: 0 }, '=-1');
+  tl31.from('#imgOne', 1, { x: 0, opacity: 0 }, '=-1');
+  tl26.from('#imgTwo', 1, { x: 0, opacity: 0 }, '=-1');
+  tl27.from('#imgThree', 1, { x: 0, opacity: 0 }, '=-1');
+  tl28.from('#imgFour', 1, { x: 0, opacity: 0 }, '=-1');
+  tl29.from('#imgFive', 1, { x: 0, opacity: 0 }, '=-1');
+  tl30.from('#imgSix', 1, { x: 0, opacity: 0 }, '=-1');
+  tl33.from('#history-1', 1, { x: 0, opacity: 0 }, '=-1');
+  tl34.from('#history-2', 1, { x: 0, opacity: 0 }, '=-1');
+  tl35.from('#history-3', 1, { x: 0, opacity: 0 }, '=-1');
+  tl36.from('#history-4', 1, { x: 0, opacity: 0 }, '=-1');
+  tl37.from('#pa-2', 1, { x: 0, opacity: 0 }, '=-1');
+  tl38.from('#pa-3', 1, { x: 0, opacity: 0 }, '=-1');
+  tl38.from('#pa-7', 1, { x: 0, opacity: 0 }, '=-1');
+  tl39.from('#pa-4', 1, { x: 0, opacity: 0 }, '=-1');
+  tl39.from('#pa-5', 1, { x: 0, opacity: 0 }, '=-1');
+  tl40.from('#pa-8', 1, { x: 0, opacity: 0 }, '=-1');
+  tl41.from('#pa-9', 1, { x: 0, opacity: 0 }, '=-1');
+  tl41.from('#pa-10', 1, { x: 0, opacity: 0 }, '=-1');
+
+  // animationScenes();
+  animeMobile();
+
+}
+
+function animeMobile() {
+  //section-3 trigger point:
+  const scene33 = new ScrollMagic.Scene({
+    triggerElement: '.sec-3',
+    triggerHook: 'onLeave',
+    duration: '100%'
+  }).setPin('.scroll-trigger-3-1')
+    .setTween(tl33)
+    .addTo(controller);
+
+  const scene34 = new ScrollMagic.Scene({
+    triggerElement: '.scroll-trigger-3-2',
+    triggerHook: 'onLeave',
+    duration: '100%'
+  }).setPin('.scroll-trigger-3-2')
+    .setTween(tl34)
+    .addTo(controller);
+
+  const scene35 = new ScrollMagic.Scene({
+    triggerElement: '.scroll-trigger-3-3',
+    triggerHook: 'onLeave',
+    duration: '100%'
+  }).setPin('.scroll-trigger-3-3')
+    .setTween(tl35)
+    .addTo(controller);
+
+  const scene36 = new ScrollMagic.Scene({
+    triggerElement: '.scroll-trigger-3-4',
+    triggerHook: 'onLeave',
+    duration: '100%'
+  }).setPin('.scroll-trigger-3-4')
+    .setTween(tl36)
+    .addTo(controller);
+
+  //section-4 trigger point:
+  const scene32 = new ScrollMagic.Scene({
+    triggerElement: '.sec-4',
+    triggerHook: 'onLeave',
+    duration: '100%'
+  }).setPin('.sec-4')
+    .setTween(tl32)
+    .addTo(controller);
 
 
-////////
+  //section-5 trigger point:
+  const scene26 = new ScrollMagic.Scene({
+    triggerElement: '.trigger-2',
+    triggerHook: 'onLeave',
+    duration: '100%'
+  }).setPin('.trigger-2')
+    .setTween(tl26)
+    .addTo(controller);
+
+  const scene27 = new ScrollMagic.Scene({
+    triggerElement: '.trigger-3',
+    triggerHook: 'onLeave',
+    duration: '100%'
+  }).setPin('.trigger-4')
+    .setTween(tl27)
+    .addTo(controller);
+
+  const scene28 = new ScrollMagic.Scene({
+    triggerElement: '.trigger-5',
+    triggerHook: 'onLeave',
+    duration: '100%'
+  }).setPin('.trigger-6')
+    .setTween(tl28)
+    .addTo(controller);
+
+  const scene29 = new ScrollMagic.Scene({
+    triggerElement: '.trigger-6',
+    triggerHook: 'onLeave',
+    duration: '100%'
+  }).setPin('.trigger-6')
+    .setTween(tl29)
+    .addTo(controller);
+
+  const scene30 = new ScrollMagic.Scene({
+    triggerElement: '.trigger-7',
+    triggerHook: 'onLeave',
+    duration: '100%'
+  }).setPin('.trigger-7')
+    .setTween(tl30)
+    .addTo(controller);
+
+  const scene31 = new ScrollMagic.Scene({
+    triggerElement: '.trigger-1',
+    triggerHook: 'onLeave',
+    duration: '100%'
+  }).setPin('.trigger-2')
+    .setTween(tl31)
+    .addTo(controller);
+
+  //section-6 trigger point:
+  const scene37 = new ScrollMagic.Scene({
+    triggerElement: '.trigger-6-1',
+    triggerHook: 'onLeave',
+    duration: '100%'
+  }).setPin('.trigger-6-1 ')
+    .setTween(tl37)
+    .addTo(controller);
+
+  const scene38 = new ScrollMagic.Scene({
+    triggerElement: '.trigger-6-2',
+    triggerHook: 'onLeave',
+    duration: '100%'
+  }).setPin('.trigger-6-2')
+    .setTween(tl38)
+    .addTo(controller);
+
+  const scene39 = new ScrollMagic.Scene({
+    triggerElement: '.trigger-6-3',
+    triggerHook: 'onLeave',
+    duration: '100%'
+  }).setPin('.trigger-6-3')
+    .setTween(tl39)
+    .addTo(controller);
+
+  const scene40 = new ScrollMagic.Scene({
+    triggerElement: '.trigger-6-4',
+    triggerHook: 'onLeave',
+    duration: '100%'
+  }).setPin('.trigger-6-4')
+    .setTween(tl40)
+    .addTo(controller);
+
+  const scene41 = new ScrollMagic.Scene({
+    triggerElement: '.trigger-6-5',
+    triggerHook: 'onLeave',
+    duration: '100%'
+  }).setPin('.trigger-6-5')
+    .setTween(tl41)
+    .addTo(controller);
 
 
-// const scene26 = new ScrollMagic.Scene({
-//   triggerElement: '.sec-7 .trigger-7-1',
-//   triggerHook: 'onLeave',
-//   duration: '100%'
-// })
 
-//   .setPin('.sec-7 #btn-side')
-//   .setTween(tl23)
-//   .addTo(controller);
-
-// const scene22 = new ScrollMagic.Scene({
-//   triggerElement: '.sec-8 .scroll-trigger8',
-//   triggerHook: 'onLeave',
-//   duration: '100%'
-// })
-
-//   .setPin('.sec-9 #btn-side')
-//   .setTween(tl22)
-//   .addTo(controller);
-
-// const scene23 = new ScrollMagic.Scene({
-//   triggerElement: '.sec-5 .scroll-trigger-5-2',
-//   triggerHook: 'onLeave',
-//   duration: '100%'
-// })
-
-//   .setPin('.sec-5 .navbar')
-//   .setTween(tl23)
-//   .addTo(controller);
-
-// const scene22 = new ScrollMagic.Scene({
-//   triggerElement: '.sec-1',
-//   triggerHook: 'onLeave',
-//   duration: '100%'
-// })
-
-//   .setPin('.sec-1 .navbar')
-//   .setTween(tl22)
-//   .addTo(controller);
-
-// const scene21 = new ScrollMagic.Scene({
-//   triggerElement: '.sec-7',
-//   triggerHook: 'onLeave',
-//   duration: '100%'
-// })
-
-//   .setPin('#btn-side')
-//   .setTween(tl21)
-//   .addTo(controller);
-
-
-//mobile version animation take-off below here:
+}
+//desktop version animation control below here: //
 const mq = window.matchMedia("(min-width: 670px)");
 if (mq.matches) {
   tl.from('blockquote', 1, { x: -400, opacity: 0 });
@@ -207,6 +328,12 @@ if (mq.matches) {
   tl7.from('#p-14', 2700, { x: 0, opacity: 0 }, '=-1');
   tl7.from('#p-15', 480, { x: 0, opacity: 0 }, '=-1');
   // tl8.from('.fix-box', 2480, { x: 0, opacity: 0 }, '=-1');
+
+  // tl26.from('#imgThree', 4580, { x: 300, opacity: 0 }, '=-1');
+  // tl26.from('#imgFour', 4580, { x: 300, opacity: 0 }, '=-1');
+
+
+
   tl8.from('#imgOne', 3480, { x: 300, opacity: 0 }, '=-1');
   tl8.from('#imgTwo', 4480, { x: 300, opacity: 0 }, '=-1');
   tl17.from('#imgThree', 4580, { x: 300, opacity: 0 }, '=-1');
@@ -226,7 +353,7 @@ if (mq.matches) {
   tl15.from('#img777', 300, { x: 0, opacity: 0 }, '=-1');
   tl16.from('#img888', 300, { x: 0, opacity: 0 }, '=-1');
 
-  animationScenes()
+  animationScenes();
 }
 
 
@@ -234,6 +361,7 @@ function updatePercentage() {
   tl.progress();
   console.log(tl.progress());
 }
+
 
 function animationScenes() {
 
@@ -263,10 +391,10 @@ function animationScenes() {
     .addTo(controller);
 
   const scene17 = new ScrollMagic.Scene({
-    triggerElement: '.sec-5 .scroll-trigger-5-1',
+    triggerElement: '.sec-5 .scroll-trigger-5-2',
     triggerHook: 'onLeave',
     duration: '100%'
-  }).setPin('..scroll-trigger-5-2')
+  }).setPin('.scroll-trigger-5-1')
     .setTween(tl17)
     .addTo(controller);
 
@@ -403,6 +531,15 @@ function animationScenes() {
   }).setPin('.sec-6 .box-right')
     .setTween(tl25)
     .addTo(controller);
+
+
+  // const scene26 = new ScrollMagic.Scene({
+  //   triggerElement: '.sec-5',
+  //   triggerHook: 'onLeave',
+  //   duration: '100%'
+  // }).setPin('.scroll-trigger-5-4')
+  //   .setTween(tl26)
+  //   .addTo(controller);
 }
 
 window.addEventListener('scroll', sticky);

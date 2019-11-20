@@ -56,6 +56,11 @@ section {
 }
 
 @media (max-width: 670px) {
+  .sec-1{
+       min-height: auto !important;
+    height: auto!important;
+  }
+
   .title-1{
         width: 100%!important;
     font-size: 47px!important;
