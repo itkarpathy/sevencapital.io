@@ -44,7 +44,7 @@ section {
 
     .trigger-6-4 {
       position: absolute;
-      top: 42%;
+      top:68%;
       left: 0;
       width: 200px;
       // border-bottom:4px solid rgb(247, 0, 247);
@@ -52,7 +52,7 @@ section {
 
     .trigger-6-5 {
       position: absolute;
-      top: 75%;
+      top: 80%;
       left: 0;
       width: 200px;
       // border-bottom:4px solid rgb(17, 126, 0);
@@ -118,6 +118,10 @@ section {
       }
     }
 
+    .space {
+        display:none;
+    }
+
     .box {
       max-width: 675px;
       font-weight: 300;
@@ -128,6 +132,8 @@ section {
       opacity: 1;
       margin: 0% 4% 0% 4%;
       position: absolute;
+
+      
 
       h3 {
         padding: 90px 0px 0px 0px;
@@ -151,13 +157,18 @@ section {
         font-size: 18px;
         font-weight: 300;
         margin-bottom: 15px;
+
+        
       }
     }
   }
 }
 
 
-@media (max-width: 670px){
+@media (max-width: 414px){
+    .para-6{
+      display: inline-block!important;
+    }
     
     .sec-6 {
       min-height: auto!important;
@@ -171,24 +182,53 @@ section {
       padding:0!important;
       position: relative!important;
 
-      .space{
-          height: 200px;
+      .space {
+        padding:0!important;
+        text-align: center;
+        max-width: 100%!important;
+        margin-bottom: 40px;
+        display: block!important;
 
-          &.one{
-            height:100px;
-          }
+        #num-1{
+        max-width: 70%;
+        margin: auto;
+        margin-bottom: 15px;
+        }
 
-          &.four{
-            height:100px;
-          }
+
+        #num-2{
+        max-width: 70%;
+        margin: auto;
+        margin-bottom: 15px;
+        }
+
+        #num-4{
+        margin-bottom: 15px;
+        }
+
+        #num-6{
+        max-width: 70%;
+        margin: auto;
+        }
+        #num-7{
+        max-width: 70%;
+        margin: auto;
+        margin-bottom: 15px;
+        }
+        #num-8{
+        max-width: 70%;
+        margin: auto;
+        }
       }
     }
+
+    
 
     .sec-6 .box-right img{
       position: absolute!important;
       // width: 100%!important;
       // height: 46px!important;
-      // opacity: 0.4!important;
+      opacity: 0!important;
 
       &:nth-child(1){
       opacity:0!important;
@@ -201,17 +241,17 @@ section {
 
       &:nth-child(3){
       left: 1% !important;
-      top: 197% !important;
+      top: 203% !important;
       }
 
       &:nth-child(4){
-      left: -39% !important;
-      top: 295% !important;
+      left: -43% !important;
+      top: 300% !important;
       height: 71px;
       }
 
       &:nth-child(5){
-      left: -68% !important;
+      left: -72% !important;
       top: 277% !important;
       }
 
@@ -221,11 +261,11 @@ section {
     
       &:nth-child(7){
       left: -40% !important;
-      top: 216% !important;
+      top: 222% !important;
       }
       &:nth-child(8){
-      left: 5% !important;
-      top: 470% !important;
+      left: 1% !important;
+      top: 486% !important;
       }
       &:nth-child(9){
       left: -5% !important;
@@ -235,13 +275,13 @@ section {
       left: -10% !important;
       top: 552% !important;
       }
-    
+  
     }
 
-    .box-right{
-      width: 50% !important; 
-      position: absolute!important;
-      left: 25%!important;
-      top: 5%!important;  
-    }
+    // .box-right{
+    //   width: 50% !important; 
+    //   position: absolute!important;
+    //   left: 25%!important;
+    //   top: 5%!important;  
+    // }
   }

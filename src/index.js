@@ -120,14 +120,14 @@ if (mq_mobile.matches) {
   tl34.from('#history-2', 1, { x: 0, opacity: 0 }, '=-1');
   tl35.from('#history-3', 1, { x: 0, opacity: 0 }, '=-1');
   tl36.from('#history-4', 1, { x: 0, opacity: 0 }, '=-1');
-  tl37.from('#pa-2', 1, { x: 0, opacity: 0 }, '=-1');
-  tl38.from('#pa-3', 1, { x: 0, opacity: 0 }, '=-1');
-  tl38.from('#pa-7', 1, { x: 0, opacity: 0 }, '=-1');
-  tl39.from('#pa-4', 1, { x: 0, opacity: 0 }, '=-1');
-  tl39.from('#pa-5', 1, { x: 0, opacity: 0 }, '=-1');
-  tl40.from('#pa-8', 1, { x: 0, opacity: 0 }, '=-1');
-  tl41.from('#pa-9', 1, { x: 0, opacity: 0 }, '=-1');
-  tl41.from('#pa-10', 1, { x: 0, opacity: 0 }, '=-1');
+  tl37.from('#num-1', 1, { x: 0, opacity: 0 }, '=-1');
+  tl38.from('#num-2', 1, { x: 0, opacity: 0 }, '=-1');
+  tl38.from('#num-3', 1, { x: 0, opacity: 0 }, '=-1');
+  tl39.from('#num-4', 1, { x: 0, opacity: 0 }, '=-1');
+  tl39.from('#num-5', 1, { x: 0, opacity: 0 }, '=-1');
+  tl40.from('#num-6', 1, { x: 0, opacity: 0 }, '=-1');
+  tl41.from('#num-7', 1, { x: 0, opacity: 0 }, '=-1');
+  tl41.from('#num-8', 1, { x: 0, opacity: 0 }, '=-1');
 
   // animationScenes();
   animeMobile();
@@ -525,7 +525,7 @@ function animationScenes() {
     .addTo(controller);
 
   const scene25 = new ScrollMagic.Scene({
-    triggerElement: '.sec-6 .trigger-6-4',
+    triggerElement: '.sec-6 .trigger-6-3',
     triggerHook: 'onLeave',
     duration: '100%'
   }).setPin('.sec-6 .box-right')
